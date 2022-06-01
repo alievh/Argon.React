@@ -1,0 +1,329 @@
+ul {
+  margin: 0 !important;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1040px;
+  }
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.download-button {
+  background-color: #fff;
+  padding: 14px 20px !important;
+  margin: 0 20px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  transition: .15s all linear;
+}
+
+.download-button:hover {
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.download-button:hover svg {
+  fill: #212529;
+}
+
+.download-button:hover span {
+  color: #212529;
+}
+
+.download-button svg {
+  fill: #5e72e4;
+  margin: 0 7px 0 0;
+}
+
+.download-button span {
+  color: #5e72e4;
+  text-transform: uppercase;
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+.intro-buttons__download {
+  background-color: #fff;
+  padding: 14px 20px !important;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: .15s all linear;
+}
+
+.intro-buttons__download:hover {
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.intro-buttons__download svg {
+  fill: #212529;
+  margin: 0 7px 0 0;
+}
+
+.intro-buttons__download span {
+  color: #212529;
+  text-transform: uppercase;
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+.intro-buttons__github {
+  background-color: #212529;
+  padding: 14px 20px !important;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: .15s all linear;
+}
+
+.intro-buttons__github:hover {
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.intro-buttons__github svg {
+  fill: #fff;
+  margin: 0 7px 0 0;
+}
+
+.intro-buttons__github span {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+.intro-buttons__github span span {
+  color: #FB6340;
+}
+
+.nav-bar {
+  width: 100%;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+}
+
+.nav-bar__logo {
+  height: 30px;
+}
+
+.nav-bar__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.nav-bar__menu ul {
+  display: flex;
+  justify-content: unset;
+  align-items: unset;
+  list-style: none;
+}
+
+.nav-bar__menu .menu-dropdown li {
+  margin-right: 8px;
+}
+
+.nav-bar__menu .menu-dropdown li a {
+  color: #fff;
+  text-decoration: none;
+  cursor: text;
+  padding: 16px;
+}
+
+.nav-bar__menu .menu-dropdown li a span {
+  font-size: 0.9rem;
+}
+
+.nav-bar__menu .menu-icons {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+}
+
+.nav-bar__menu .menu-icons li {
+  margin-right: 0.5rem;
+}
+
+.nav-bar__menu .menu-icons li a {
+  padding: 16px 8px;
+  color: #fff;
+  text-decoration: none;
+  transition: all .15s linear;
+}
+
+.nav-bar__menu .menu-icons li a:hover {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.intro {
+  width: 100%;
+  background: linear-gradient(150deg, #281483 15%, #8f6ed5 70%, #d782d9 94%);
+  padding: 96px 0;
+}
+
+.intro__logo {
+  width: 200px;
+}
+
+.intro__content {
+  margin: 24px 0 16px 0;
+  font-weight: 300;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #fff;
+  line-height: 1.7;
+}
+
+.intro .intro-buttons {
+  line-height: 1.5;
+  display: flex;
+}
+
+.intro__footer-content {
+  color: #fff;
+}
+
+.intro__footer-content small {
+  font-size: 12px;
+  font-weight: 600;
+}
+/*# sourceMappingURL=main.css.map */

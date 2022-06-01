@@ -1,0 +1,32 @@
+.intro {
+    width: 100%;
+    background: linear-gradient(150deg,#281483 15%,#8f6ed5 70%,#d782d9 94%);
+    padding: 96px 0;
+
+    &__logo {
+        width: 200px;
+    }
+
+    &__content {
+        margin: 24px 0 16px 0;
+        font-weight: 300;
+        text-align: center;
+        font-size: 1.25rem;
+        color: $white;
+        line-height: 1.7;
+    }
+
+    .intro-buttons {
+        line-height: 1.5;
+        display: flex;
+    }
+    
+    &__footer-content {
+        color: $white;
+
+        small {
+            font-size: 12px;
+            font-weight: 600;
+        }
+    }
+}

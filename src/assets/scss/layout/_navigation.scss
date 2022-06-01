@@ -1,0 +1,57 @@
+.nav-bar {
+  width: 100%;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+
+  &__logo {
+    height: 30px;
+  }
+
+  &__menu {
+    @include justify(space-between, center);
+    color: $white;
+
+    ul {
+      @include justify(unset, unset);
+      list-style: none;
+    }
+
+    .menu-dropdown {
+
+      li {
+        margin-right: 8px;
+
+        a {
+          color: $white;
+          text-decoration: none;
+          cursor: text;
+          padding: 16px;
+
+          span {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    } 
+
+    .menu-icons {
+      @include justify(unset,center);
+
+      li {
+        margin-right: 0.5rem;
+        
+        a {
+          padding: 16px 8px;
+          color: $white;
+          text-decoration: none;
+          transition: all .15s linear;
+
+          &:hover {
+            color: rgba(255,255,255,.65);
+          }
+        }
+      }
+    }
+  }
+}

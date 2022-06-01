@@ -1,0 +1,88 @@
+.download-button {
+  background-color: $white;
+  padding: 14px 20px !important;
+  margin: 0 20px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  transition: .15s all linear;
+
+  &:hover {
+    box-shadow: 0 7px 14px rgba(50, 50, 93 , 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+
+    svg {
+      fill: $light-black;
+    }
+
+    span {
+      color: $light-black;
+    }
+  }
+
+  svg {
+    fill: $blue;
+    margin: 0 7px 0 0;
+  }
+
+  span {
+    color: $blue;
+    text-transform: uppercase;
+    font-size: .875rem;
+    font-weight: 600;
+  }
+}
+
+.intro-buttons__download {
+  background-color: $white;
+  padding: 14px 20px !important;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: .15s all linear;
+
+  &:hover {
+    box-shadow: 0 7px 14px rgba(50, 50, 93 , 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
+
+  svg {
+    fill: $light-black;
+    margin: 0 7px 0 0;
+  }
+
+  span {
+    color: $light-black;
+    text-transform: uppercase;
+    font-size: .875rem;
+    font-weight: 600;
+  }
+}
+
+.intro-buttons__github {
+  background-color: $light-black;
+  padding: 14px 20px !important;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: .15s all linear;
+
+  &:hover {
+    box-shadow: 0 7px 14px rgba(50, 50, 93 , 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
+
+  svg {
+    fill: $white;
+    margin: 0 7px 0 0;
+  }
+
+  span {
+    color: $white;
+    text-transform: uppercase;
+    font-size: .875rem;
+    font-weight: 600;
+
+    span {
+      color: #FB6340;
+    }
+  }
+}
