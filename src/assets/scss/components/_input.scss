@@ -1,0 +1,52 @@
+.form-group {
+    width: 100%;
+    margin-bottom: 16px;
+
+    input {
+        width: 100%;
+        border: none;
+        font-size: 0.875rem;
+        padding: 12px 14px;
+        border-radius: 0.25rem;
+        color: $light;
+    }
+
+    .input-default {
+        border:1px solid $light;
+
+        &:focus {
+            outline: none;
+            border: 1px solid $lighter;
+        }
+
+        &::placeholder {
+            color: $light;
+        }
+    }
+
+    .input-success {
+        border:1px solid $success;
+
+        &:focus {
+            outline: none;
+            border: 1px solid $light;
+        }
+
+        &::placeholder {
+            color: $success;
+        }
+    }
+    
+    .input-warning {
+        border:1px solid $warning;
+
+        &:focus {
+            outline: none;
+            border:1px solid $light;
+        }
+
+        &::placeholder {
+            color: $warning;
+        }
+    }
+}

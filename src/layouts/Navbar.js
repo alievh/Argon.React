@@ -1,17 +1,23 @@
-import React from "react";
-import Header from "./Header";
+import React, { useState } from "react";
+import Header from "../components/Header";
 import { Link } from "react-router-dom";
 import { AiFillFacebook } from "react-icons/ai";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaTwitterSquare } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { FaCloudDownloadAlt } from "react-icons/fa";
-import ButtonLink from "./ButtonLink";
+import SocailLink from "../components/SocailLink";
+import ButtonLink from "../components/ButtonLink";
 
 function Navbar() {
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () => {
+    scrollTo(0, 0)
+  };
+  window.addEventListener("scroll", changeNavbarColor);
   return (
     <Header>
-      <nav className="nav-bar">
+      <nav className={colorChange ? "nav-bar sticky" : "nav-bar"}>
         <div className="container">
           <div className="row">
             <div className="col-lg-2 d-flex align-items-center justify-content-center">
@@ -39,24 +45,36 @@ function Navbar() {
                 </ul>
                 <ul className="menu-icons">
                   <li>
-                    <a href="https://www.facebook.com/CreativeTim/" target="_blank">
-                      <AiFillFacebook />
-                    </a>
+                    <SocailLink
+                      link={"https://www.facebook.com/CreativeTim/"}
+                      target={"_blank"}
+                      content={<AiFillFacebook />}
+                    />
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/accounts/login/?next=/creativetimofficial/" target="_blank">
-                      <AiOutlineInstagram />
-                    </a>
+                    <SocailLink
+                      link={
+                        "https://www.instagram.com/accounts/login/?next=/creativetimofficial/"
+                      }
+                      target={"_blank"}
+                      content={<AiOutlineInstagram />}
+                    />
                   </li>
                   <li>
-                    <a href="https://twitter.com/creativetim" target="_blank">
-                      <FaTwitterSquare />
-                    </a>
+                    <SocailLink
+                      link={"https://twitter.com/creativetim"}
+                      target={"_blank"}
+                      content={<FaTwitterSquare />}
+                    />
                   </li>
                   <li>
-                    <a href="https://github.com/creativetimofficial/argon-design-system-angular?ref=adsa-navbar" target="_blank">
-                      <AiFillGithub />
-                    </a>
+                    <SocailLink
+                      link={
+                        "https://github.com/creativetimofficial/argon-design-system-angular?ref=adsa-navbar"
+                      }
+                      target={"_blank"}
+                      content={<AiFillGithub />}
+                    />
                   </li>
                   <li>
                     <ButtonLink

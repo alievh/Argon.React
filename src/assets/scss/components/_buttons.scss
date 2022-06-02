@@ -5,30 +5,30 @@
   border-radius: 3px;
   display: flex;
   align-items: center;
-  transition: .15s all linear;
+  transition: 0.15s all linear;
 
   &:hover {
-    box-shadow: 0 7px 14px rgba(50, 50, 93 , 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
     transform: translateY(-2px);
 
     svg {
-      fill: $light-black;
+      fill: $dark;
     }
 
     span {
-      color: $light-black;
+      color: $darker;
     }
   }
 
   svg {
-    fill: $blue;
+    fill: $primary;
     margin: 0 7px 0 0;
   }
 
   span {
-    color: $blue;
+    color: $primary;
     text-transform: uppercase;
-    font-size: .875rem;
+    font-size: 0.875rem;
     font-weight: 600;
   }
 }
@@ -38,35 +38,35 @@
   padding: 14px 20px !important;
   border-radius: 3px;
   text-decoration: none;
-  transition: .15s all linear;
+  transition: 0.15s all linear;
 
   &:hover {
-    box-shadow: 0 7px 14px rgba(50, 50, 93 , 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
     transform: translateY(-2px);
   }
 
   svg {
-    fill: $light-black;
+    fill: $dark;
     margin: 0 7px 0 0;
   }
 
   span {
-    color: $light-black;
+    color: $dark;
     text-transform: uppercase;
-    font-size: .875rem;
+    font-size: 0.875rem;
     font-weight: 600;
   }
 }
 
 .intro-buttons__github {
-  background-color: $light-black;
+  background-color: $dark;
   padding: 14px 20px !important;
   border-radius: 3px;
   text-decoration: none;
-  transition: .15s all linear;
+  transition: 0.15s all linear;
 
   &:hover {
-    box-shadow: 0 7px 14px rgba(50, 50, 93 , 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
     transform: translateY(-2px);
   }
 
@@ -78,11 +78,11 @@
   span {
     color: $white;
     text-transform: uppercase;
-    font-size: .875rem;
+    font-size: 0.875rem;
     font-weight: 600;
 
     span {
-      color: #FB6340;
+      color: #fb6340;
     }
   }
 }

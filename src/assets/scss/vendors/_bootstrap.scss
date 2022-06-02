@@ -1,9 +1,171 @@
 ul {
-    margin: 0 !important;
+  margin: 0 !important;
 }
 
 @media (min-width: 1200px) {
-    .container {
-        max-width: 1040px;
-    }
+  .container {
+    max-width: 1040px;
+  }
+}
+
+.py-96p {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.btn {
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+
+.btn-primary {
+  @include buttonStyle($white, $primary);
+
+  &:hover {
+    @include buttonStyle($white, $primary);
+  }
+}
+
+.btn-success {
+  @include buttonStyle($white, $success);
+  border-color: $success;
+
+  &:hover {
+    @include buttonStyle($white, $success);
+    border-color: $success;
+  }
+}
+
+.btn-danger {
+  @include buttonStyle($white, $danger);
+
+  &:hover {
+    @include buttonStyle($white, $warning);
+    border-color: $danger;
+  }
+}
+
+.btn-warning {
+  @include buttonStyle($white, $warning);
+
+  &:hover {
+    @include buttonStyle($white, $warning);
+  }
+}
+
+.btn-info {
+  @include buttonStyle($white, $info);
+
+  &:hover {
+    @include buttonStyle($white, $info);
+  }
+}
+
+.btn-light {
+  @include buttonStyle($primary, $neutral);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+  &:hover {
+    @include buttonStyle($dark, $neutral);
+  }
+}
+
+.btn-outline-primary {
+  @include outlineButtonStyle($primary, $primary);
+  &:hover {
+    @include buttonStyle($white, $primary);
+  }
+}
+
+.btn-outline-info {
+  @include outlineButtonStyle($info, $info);
+  &:hover {
+    @include buttonStyle($white, $info);
+  }
+}
+
+.btn-outline-success {
+  @include outlineButtonStyle($success, $success);
+  &:hover {
+    @include buttonStyle($white, $success);
+  }
+}
+
+.btn-outline-warning {
+  @include outlineButtonStyle($success, $success);
+  &:hover {
+    @include buttonStyle($white, $warning);
+  }
+}
+
+.btn-outline-danger {
+  @include outlineButtonStyle($danger, $danger);
+  &:hover {
+    @include buttonStyle($white, $danger);
+  }
+}
+
+.btn-sm {
+  @include buttonSize(0.7rem, 5px 10px);
+}
+
+.btn-md {
+  @include buttonSize(0.875rem, 10px 20px);
+}
+
+.btn-lg {
+  @include buttonSize(0.95rem, 15px 20px);
+}
+
+.btn-link {
+  text-decoration: none;
+}
+
+.text-default {
+  color: $dark;
+
+  &:hover {
+    color: $darker;
+  }
+}
+
+.text-primary {
+  color: $primary !important;
+
+  &:hover {
+    color: #324cdd !important;
+  }
+}
+
+.text-info {
+  color: $info !important;
+
+  &:hover {
+    color: #0da5c0 !important;
+  }
+}
+
+.text-success {
+  color: $success !important;
+
+  &:hover {
+    color: #24a46d !important;
+  }
+}
+
+.text-warning {
+  color: $warning !important;
+
+  &:hover {
+    color: #fa3a0e !important;
+  }
+}
+
+.text-danger {
+  color: $danger !important;
+
+  &:hover {
+    color: #ec0c38 !important;
+  }
 }

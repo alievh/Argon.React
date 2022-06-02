@@ -3,3 +3,18 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin buttonStyle($color, $background-color) {
+    color: $color;
+    background-color: $background-color;
+}
+
+@mixin outlineButtonStyle($color, $border-color) {
+    color: $color;
+    border-color: $border-color;
+}
+
+@mixin buttonSize($font-size, $padding) {
+    font-size: $font-size;
+    padding: $padding;
+}

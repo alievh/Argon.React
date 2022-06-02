@@ -8,6 +8,198 @@ ul {
   }
 }
 
+.py-96p {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.btn {
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #5e72e4;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #5e72e4;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #2dce89;
+  border-color: #2dce89;
+}
+
+.btn-success:hover {
+  color: #fff;
+  background-color: #2dce89;
+  border-color: #2dce89;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #f5365c;
+}
+
+.btn-danger:hover {
+  color: #fff;
+  background-color: #fb6340;
+  border-color: #f5365c;
+}
+
+.btn-warning {
+  color: #fff;
+  background-color: #fb6340;
+}
+
+.btn-warning:hover {
+  color: #fff;
+  background-color: #fb6340;
+}
+
+.btn-info {
+  color: #fff;
+  background-color: #11cdef;
+}
+
+.btn-info:hover {
+  color: #fff;
+  background-color: #11cdef;
+}
+
+.btn-light {
+  color: #5e72e4;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.btn-light:hover {
+  color: #212529;
+  background-color: #fff;
+}
+
+.btn-outline-primary {
+  color: #5e72e4;
+  border-color: #5e72e4;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #5e72e4;
+}
+
+.btn-outline-info {
+  color: #11cdef;
+  border-color: #11cdef;
+}
+
+.btn-outline-info:hover {
+  color: #fff;
+  background-color: #11cdef;
+}
+
+.btn-outline-success {
+  color: #2dce89;
+  border-color: #2dce89;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #2dce89;
+}
+
+.btn-outline-warning {
+  color: #2dce89;
+  border-color: #2dce89;
+}
+
+.btn-outline-warning:hover {
+  color: #fff;
+  background-color: #fb6340;
+}
+
+.btn-outline-danger {
+  color: #f5365c;
+  border-color: #f5365c;
+}
+
+.btn-outline-danger:hover {
+  color: #fff;
+  background-color: #f5365c;
+}
+
+.btn-sm {
+  font-size: 0.7rem;
+  padding: 5px 10px;
+}
+
+.btn-md {
+  font-size: 0.875rem;
+  padding: 10px 20px;
+}
+
+.btn-lg {
+  font-size: 0.95rem;
+  padding: 15px 20px;
+}
+
+.btn-link {
+  text-decoration: none;
+}
+
+.text-default {
+  color: #212529;
+}
+
+.text-default:hover {
+  color: black;
+}
+
+.text-primary {
+  color: #5e72e4 !important;
+}
+
+.text-primary:hover {
+  color: #324cdd !important;
+}
+
+.text-info {
+  color: #11cdef !important;
+}
+
+.text-info:hover {
+  color: #0da5c0 !important;
+}
+
+.text-success {
+  color: #2dce89 !important;
+}
+
+.text-success:hover {
+  color: #24a46d !important;
+}
+
+.text-warning {
+  color: #fb6340 !important;
+}
+
+.text-warning:hover {
+  color: #fa3a0e !important;
+}
+
+.text-danger {
+  color: #f5365c !important;
+}
+
+.text-danger:hover {
+  color: #ec0c38 !important;
+}
+
 html,
 body,
 div,
@@ -151,7 +343,7 @@ body {
   border-radius: 3px;
   display: flex;
   align-items: center;
-  transition: .15s all linear;
+  transition: 0.15s all linear;
 }
 
 .download-button:hover {
@@ -164,7 +356,7 @@ body {
 }
 
 .download-button:hover span {
-  color: #212529;
+  color: black;
 }
 
 .download-button svg {
@@ -175,7 +367,7 @@ body {
 .download-button span {
   color: #5e72e4;
   text-transform: uppercase;
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: 600;
 }
 
@@ -184,7 +376,7 @@ body {
   padding: 14px 20px !important;
   border-radius: 3px;
   text-decoration: none;
-  transition: .15s all linear;
+  transition: 0.15s all linear;
 }
 
 .intro-buttons__download:hover {
@@ -200,7 +392,7 @@ body {
 .intro-buttons__download span {
   color: #212529;
   text-transform: uppercase;
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: 600;
 }
 
@@ -209,7 +401,7 @@ body {
   padding: 14px 20px !important;
   border-radius: 3px;
   text-decoration: none;
-  transition: .15s all linear;
+  transition: 0.15s all linear;
 }
 
 .intro-buttons__github:hover {
@@ -225,12 +417,76 @@ body {
 .intro-buttons__github span {
   color: #fff;
   text-transform: uppercase;
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: 600;
 }
 
 .intro-buttons__github span span {
-  color: #FB6340;
+  color: #fb6340;
+}
+
+.sub-heading {
+  color: #2dce89;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.category-heading small {
+  font-size: 80%;
+  font-weight: 600;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.form-group input {
+  width: 100%;
+  border: none;
+  font-size: 0.875rem;
+  padding: 12px 14px;
+  border-radius: 0.25rem;
+  color: #adb5bd;
+}
+
+.form-group .input-default {
+  border: 1px solid #adb5bd;
+}
+
+.form-group .input-default:focus {
+  outline: none;
+  border: 1px solid #e9ecef;
+}
+
+.form-group .input-default::placeholder {
+  color: #adb5bd;
+}
+
+.form-group .input-success {
+  border: 1px solid #2dce89;
+}
+
+.form-group .input-success:focus {
+  outline: none;
+  border: 1px solid #adb5bd;
+}
+
+.form-group .input-success::placeholder {
+  color: #2dce89;
+}
+
+.form-group .input-warning {
+  border: 1px solid #fb6340;
+}
+
+.form-group .input-warning:focus {
+  outline: none;
+  border: 1px solid #adb5bd;
+}
+
+.form-group .input-warning::placeholder {
+  color: #fb6340;
 }
 
 .nav-bar {
@@ -238,6 +494,8 @@ body {
   padding: 16px;
   position: fixed;
   top: 0;
+  z-index: 1000;
+  transition: 0.25s all linear;
 }
 
 .nav-bar__logo {
@@ -294,10 +552,16 @@ body {
   color: rgba(255, 255, 255, 0.65);
 }
 
+.nav-bar.sticky {
+  top: -80px;
+  background-color: #172b4d;
+}
+
 .intro {
   width: 100%;
   background: linear-gradient(150deg, #281483 15%, #8f6ed5 70%, #d782d9 94%);
   padding: 96px 0;
+  position: relative;
 }
 
 .intro__logo {
@@ -325,5 +589,39 @@ body {
 .intro__footer-content small {
   font-size: 12px;
   font-weight: 600;
+}
+
+.intro__separator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.intro__separator svg polygon {
+  fill: #fff;
+}
+
+.basic-elements {
+  padding-top: 64px;
+}
+
+.basic-elements h2 {
+  font-size: 2rem;
+  color: #212529;
+}
+
+.basic-elements button {
+  margin: 8px 8px 8px 0;
+  transition: all 0.15s linear;
+}
+
+.basic-elements button:hover {
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.inputs {
+  padding-top: 64px;
 }
 /*# sourceMappingURL=main.css.map */

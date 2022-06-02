@@ -1,0 +1,18 @@
+.basic-elements {
+  padding-top: 64px;
+
+  h2 {
+    font-size: 2rem;
+    color: $dark;
+  }
+  button {
+    margin: 8px 8px 8px 0;
+    transition: all 0.15s linear;
+
+    &:hover {
+      box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1),
+        0 3px 6px rgba(0, 0, 0, 0.08);
+      transform: translateY(-2px);
+    }
+  }
+}

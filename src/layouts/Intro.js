@@ -1,12 +1,12 @@
 import React from "react";
-import ButtonLink from "./ButtonLink";
+import ButtonLink from "../components/ButtonLink";
 import { AiFillGithub } from "react-icons/ai";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 
 function Intro() {
   return (
     <section className="intro">
-      <div className="container py-5">
+      <div className="container py-96p">
         <div className="row d-flex justify-content-center">
           <div className="col-lg-6 d-flex flex-column align-items-center">
             <img
@@ -18,7 +18,7 @@ function Intro() {
               A beautiful Design System for Bootstrap 4 and Angular 7. It's Free
               and Open Source.
             </p>
-            <div className="intro-buttons mt-5">
+            <div className="intro-buttons mt-4">
               <ButtonLink
                 className={"intro-buttons__download me-2"}
                 location={
@@ -42,13 +42,30 @@ function Intro() {
             </div>
             <div className="intro__footer-content mt-5 d-flex align-items-center">
               <small className="me-2">*proudly coded by</small>
-              <img src="https://demos.creative-tim.com/argon-design-system-angular/assets/img/brand/creativetim-white-slim.png" height="28px"></img>
+              <img
+                src="https://demos.creative-tim.com/argon-design-system-angular/assets/img/brand/creativetim-white-slim.png"
+                height="28px"
+                alt="Avatar"
+              ></img>
             </div>
           </div>
         </div>
       </div>
-      <div className="separator">
-        
+      <div className="intro__separator">
+        <svg
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          xmlns="http://www.w3.org/2000/svg"
+          y="0"
+        >
+          <polygon
+            _ngcontent-c3=""
+            className="fill-white"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
       </div>
     </section>
   );
