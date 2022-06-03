@@ -1,0 +1,19 @@
+.bootstrap-carousel {
+  width: 100%;
+  background: linear-gradient(150deg, #7795f8 15%, #6772e5 70%, #555abf 94%);
+  position: relative;
+  padding: 64px 0;
+
+  h1 {
+    font-size: 2.5rem;
+    color: $white;
+    font-weight: 300;
+  }
+
+  p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: $white;
+  }
+}

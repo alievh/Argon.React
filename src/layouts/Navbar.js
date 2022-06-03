@@ -10,14 +10,22 @@ import SocailLink from "../components/SocailLink";
 import ButtonLink from "../components/ButtonLink";
 
 function Navbar() {
-  const [colorChange, setColorchange] = useState(false);
-  const changeNavbarColor = () => {
-    scrollTo(0, 0)
+  let [isScrollUp, setIsScrollUp] = useState(true);
+  let [isTop, setIsTop] = useState(true);
+
+  window.onscroll = function (e) {
+    if (this.scrollY == 0) {
+      setIsTop(true);
+    }else {
+      setIsTop(false);
+    }
+    setIsScrollUp(this.oldScroll > this.scrollY);
+    this.oldScroll = this.scrollY;
   };
-  window.addEventListener("scroll", changeNavbarColor);
+
   return (
     <Header>
-      <nav className={colorChange ? "nav-bar sticky" : "nav-bar"}>
+      <nav className={isTop ? "nav-bar" : isScrollUp ? "nav-bar sticky" : "nav-bar hide"}>
         <div className="container">
           <div className="row">
             <div className="col-lg-2 d-flex align-items-center justify-content-center">

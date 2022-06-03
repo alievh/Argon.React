@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   z-index: 1000;
-  transition: 0.25s all linear;
+  transition: 0.15s all linear;
 
   &__logo {
     height: 30px;
@@ -59,7 +59,11 @@
 }
 
 .nav-bar.sticky {
-  top: -80px;
+  top: 0;
+  left: 0;
   background-color: $default;
 }
 
+.nav-bar.hide {
+  top: -80px;
+}

@@ -4,6 +4,7 @@ import Links from "../components/Links";
 import SubHeading from "../components/SubHeading";
 import CategoryHeading from "../components/CategoryHeading";
 import { RiShoppingBag3Fill } from "react-icons/ri";
+import Heading from "../components/Heading";
 
 function BasicElements() {
   return (
@@ -11,9 +12,7 @@ function BasicElements() {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <h2 className="mb-5">
-              <span>Basic Elements</span>
-            </h2>
+            <Heading className={"mb-5 heading"} content={"Basic Elements"} />
             <SubHeading className={"mb-4 sub-heading"} content={"Buttons"} />
             <div className="button-size">
               <Button

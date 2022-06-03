@@ -13,10 +13,31 @@ ul {
   padding-bottom: 96px;
 }
 
+.py-64p {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.mt-64p {
+  margin-top: 64px;
+}
+
+.mt-96p {
+  margin-top: 96px;
+}
+
 .btn {
   font-size: 0.875rem;
   font-weight: 600;
   padding: 10px 20px;
+}
+
+.btn-dark {
+  @include buttonStyle($white, $dark);
+
+  &:hover {
+    @include buttonStyle($white, $dark);
+  }
 }
 
 .btn-primary {
@@ -138,6 +159,14 @@ ul {
   }
 }
 
+.text-white {
+  color: $white;
+
+  &:hover {
+    color: $light;
+  }
+}
+
 .text-info {
   color: $info !important;
 
@@ -168,4 +197,48 @@ ul {
   &:hover {
     color: #ec0c38 !important;
   }
+}
+
+.bg-default {
+  background-color: $default;
+}
+
+.bgcolor-success {
+  background-color: $success;
+}
+
+.bgcolor-info {
+  background-color: $info;
+}
+
+.bgcolor-danger {
+  background-color: $danger;
+}
+
+.bgcolor-warning {
+  background-color: $warning;
+}
+
+.textcolor-muted {
+  color: $gray;
+}
+
+.textcolor-primary {
+  color: $primary;
+}
+
+.textcolor-info {
+  color: $info;
+}
+
+.textcolor-success {
+  color: $success;
+}
+
+.textcolor-warning {
+  color: $warning;
+}
+
+.textcolor-danger {
+  color: $danger;
 }

@@ -13,10 +13,33 @@ ul {
   padding-bottom: 96px;
 }
 
+.py-64p {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.mt-64p {
+  margin-top: 64px;
+}
+
+.mt-96p {
+  margin-top: 96px;
+}
+
 .btn {
   font-size: 0.875rem;
   font-weight: 600;
   padding: 10px 20px;
+}
+
+.btn-dark {
+  color: #fff;
+  background-color: #212529;
+}
+
+.btn-dark:hover {
+  color: #fff;
+  background-color: #212529;
 }
 
 .btn-primary {
@@ -168,6 +191,14 @@ ul {
   color: #324cdd !important;
 }
 
+.text-white {
+  color: #fff;
+}
+
+.text-white:hover {
+  color: #adb5bd;
+}
+
 .text-info {
   color: #11cdef !important;
 }
@@ -198,6 +229,50 @@ ul {
 
 .text-danger:hover {
   color: #ec0c38 !important;
+}
+
+.bg-default {
+  background-color: #172b4d;
+}
+
+.bgcolor-success {
+  background-color: #2dce89;
+}
+
+.bgcolor-info {
+  background-color: #11cdef;
+}
+
+.bgcolor-danger {
+  background-color: #f5365c;
+}
+
+.bgcolor-warning {
+  background-color: #fb6340;
+}
+
+.textcolor-muted {
+  color: #8898aa;
+}
+
+.textcolor-primary {
+  color: #5e72e4;
+}
+
+.textcolor-info {
+  color: #11cdef;
+}
+
+.textcolor-success {
+  color: #2dce89;
+}
+
+.textcolor-warning {
+  color: #fb6340;
+}
+
+.textcolor-danger {
+  color: #f5365c;
 }
 
 html,
@@ -489,13 +564,313 @@ body {
   color: #fb6340;
 }
 
+.bg-color-primary {
+  background-color: #5e72e4;
+}
+
+.bg-color-success {
+  background-color: #2dce89;
+}
+
+.bg-color-default {
+  background-color: #172b4d;
+}
+
+.bg-color-danger {
+  background-color: #f5365c;
+}
+
+.bg-color-warning {
+  background-color: #fb6340;
+}
+
+.bg-color-info {
+  background-color: #11cdef;
+}
+
+.border-radius {
+  border-radius: 5px;
+}
+
+.svg-lg svg {
+  font-size: 18px;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #212529;
+}
+
+.progress-wrapper {
+  padding-top: 24px;
+}
+
+.progress-wrapper .progress-info {
+  margin-bottom: 12px;
+}
+
+.progress-wrapper .progress-info .progress-label span {
+  font-size: 0.625rem;
+  color: #5e72e4;
+  padding: 0.25rem 1rem;
+  background: rgba(94, 114, 228, 0.1);
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.progress-wrapper .progress-info .progress-percentage span {
+  font-size: 0.875rem;
+}
+
+.progress-wrapper .progress-bars .progress {
+  height: 8px;
+  margin-bottom: 16px;
+}
+
+.progress-wrapper .progress-bars .progress .w-40 {
+  width: 40%;
+}
+
+.progress-wrapper .progress-bars .progress .w-60 {
+  width: 60%;
+}
+
+.alert-container {
+  padding: 16px 24px;
+  margin-top: 20px;
+  display: flex;
+  border-radius: 0.25rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alert-container__left span {
+  color: #fff;
+  font-size: .875rem;
+  margin-left: 10px;
+}
+
+.alert-container__left span span {
+  font-weight: 700;
+}
+
+.alert-container__left svg {
+  fill: #fff;
+  font-size: 20px;
+}
+
+.alert-container .close-alert {
+  border: none;
+  background-color: transparent;
+}
+
+.alert-container .close-alert span {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.5rem;
+}
+
+.heading-component small {
+  font-size: 80%;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #8898aa;
+}
+
+.heading-component h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.heading-component h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.heading-component h3 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.heading-component h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.heading-component h5 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.heading-component h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.display-component small {
+  font-size: 80%;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #8898aa;
+}
+
+.display-component h1 {
+  font-size: 3.3rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.display-component h2 {
+  font-size: 2.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.display-component h3 {
+  font-size: 2.1875rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.display-component h4 {
+  font-size: 1.6275rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.display-component h5 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.display-component h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.specialized-titles small {
+  font-size: 80%;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #8898aa;
+}
+
+.specialized-titles .heading {
+  letter-spacing: 0.025em;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.specialized-titles .heading-title {
+  color: #fb6340;
+  letter-spacing: 0.025em;
+  font-size: 1.375rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.specialized-titles .heading-seaction h3 {
+  font-size: 2.1875rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.specialized-titles .heading-seaction p {
+  color: #8898aa;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-top: 1.5rem;
+}
+
+.paragraph small {
+  font-size: 80%;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #8898aa;
+}
+
+.paragraph p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.paragraph .paragraph-text {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #8898aa;
+}
+
+.paragraph .lead-text {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-top: 1.5rem;
+  color: #8898aa;
+}
+
+.paragraph .quote {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #8898aa;
+}
+
+.paragraph span {
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 500;
+  color: #8898aa;
+}
+
+.paragraph span::before {
+  content: "\2014 \00A0";
+}
+
+.avatar-section small {
+  display: block;
+  text-transform: uppercase;
+  color: #8898aa;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.avatar-section .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.separator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.separator svg polygon {
+  fill: #fff;
+}
+
 .nav-bar {
   width: 100%;
   padding: 16px;
   position: fixed;
   top: 0;
   z-index: 1000;
-  transition: 0.25s all linear;
+  transition: 0.15s all linear;
 }
 
 .nav-bar__logo {
@@ -553,8 +928,36 @@ body {
 }
 
 .nav-bar.sticky {
-  top: -80px;
+  top: 0;
+  left: 0;
   background-color: #172b4d;
+}
+
+.nav-bar.hide {
+  top: -80px;
+}
+
+.nucleo-icons {
+  padding: 96px 0 250px 0;
+}
+
+.nucleo-icons h2 {
+  font-weight: 600;
+}
+
+.nucleo-icons p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-top: 1.5rem;
+}
+
+.nucleo-icons .btn {
+  transition: .15s all linear;
+}
+
+.nucleo-icons .btn:hover {
+  transform: translateY(-2px);
 }
 
 .intro {
@@ -591,24 +994,8 @@ body {
   font-weight: 600;
 }
 
-.intro__separator {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.intro__separator svg polygon {
-  fill: #fff;
-}
-
 .basic-elements {
   padding-top: 64px;
-}
-
-.basic-elements h2 {
-  font-size: 2rem;
-  color: #212529;
 }
 
 .basic-elements button {
@@ -623,5 +1010,33 @@ body {
 
 .inputs {
   padding-top: 64px;
+}
+
+.checks-radios {
+  padding: 64px 0;
+}
+
+.home-main {
+  padding: 64px 0;
+}
+
+.bootstrap-carousel {
+  width: 100%;
+  background: linear-gradient(150deg, #7795f8 15%, #6772e5 70%, #555abf 94%);
+  position: relative;
+  padding: 64px 0;
+}
+
+.bootstrap-carousel h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 300;
+}
+
+.bootstrap-carousel p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

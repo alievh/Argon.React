@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Links({className, content}) {
+function Links({className, content, icon}) {
   return (
-    <a href="#" className={className}>{content}</a>
+    <a href="#" className={className}>{icon}{content}</a>
   )
 }
 

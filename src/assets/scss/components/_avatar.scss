@@ -1,0 +1,15 @@
+.avatar-section {
+    small {
+        display: block;
+        text-transform: uppercase;
+        color: $gray;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 24px;
+    }
+
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+}
