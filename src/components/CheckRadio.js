@@ -1,16 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 
 function CheckRadio({
   inputClassName,
+  divClassName,
   type,
   forName,
   labelClassName,
   content,
+  check,
+  disabled,
+  forFor,
+  role,
 }) {
+  let [checked, setChecked] = useState(check);
+
+  function isChecked() {
+    if (checked == true) {
+      setChecked(false);
+    } else {
+      setChecked(true);
+    }
+  }
+
   return (
-    <div className="form-check">
-      <input className={inputClassName} type={type} name={forName} />
-      <label className={labelClassName} htmlFor={forName}>
+    <div className={divClassName}>
+      <input
+        disabled={disabled}
+        onChange={isChecked}
+        className={inputClassName}
+        checked={checked}
+        type={type}
+        name={forName}
+        role={role}
+      />
+      <label className={labelClassName} htmlFor={forFor}>
         {content}
       </label>
     </div>

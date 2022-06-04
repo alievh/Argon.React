@@ -22,6 +22,11 @@ ul {
   margin-top: 64px;
 }
 
+.my-64p {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
 .mt-96p {
   margin-top: 96px;
 }
@@ -167,6 +172,14 @@ ul {
   }
 }
 
+.text-gray {
+  color: #8898aa;
+
+  &:hover {
+    color: #525f7f;
+  }
+}
+
 .text-info {
   color: $info !important;
 
@@ -199,8 +212,37 @@ ul {
   }
 }
 
+.span-primary {
+  color: $primary !important;
+}
+
+.span-white {
+  color: $white;
+}
+
+.span-info {
+  color: $info !important;
+}
+
+.span-success {
+  color: $success !important;
+}
+
+.span-warning {
+  color: $warning !important;
+}
+
+.span-danger {
+  color: $danger !important;
+}
+
+
 .bg-default {
   background-color: $default;
+}
+
+.bgcolor-secondary {
+  background-color: $secondary;
 }
 
 .bgcolor-success {
@@ -219,8 +261,24 @@ ul {
   background-color: $warning;
 }
 
-.textcolor-muted {
-  color: $gray;
+.spanbg-primary {
+  background-color: rgba(203,210,246,.5);
+}
+
+.spanbg-success {
+  background-color: rgba(147,231,195,.5);
+}
+
+.spanbg-info {
+  background-color: rgba(136,230,247,.5);
+}
+
+.spanbg-danger {
+  background-color: rgba(251,175,190,.5);
+}
+
+.spanbg-warning {
+  background-color: rgba(254,201,189,.5);
 }
 
 .textcolor-primary {

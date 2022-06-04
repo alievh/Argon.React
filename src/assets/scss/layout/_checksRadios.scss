@@ -1,3 +1,14 @@
 .checks-radios {
     padding: 64px 0;
+    
+    .form-switch {
+
+        input {
+            padding: 12px 25px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
 }

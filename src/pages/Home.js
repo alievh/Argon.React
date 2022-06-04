@@ -7,6 +7,10 @@ import Navbars from "../layouts/Navbars";
 import HomeMain from "../layouts/HomeMain";
 import BootstrapCarousel from "../layouts/BootstrapCarousel";
 import NucleoIcons from "../layouts/NucleoIcons";
+import LoginRegister from "../layouts/LoginRegister";
+import DownloadAngular from "../layouts/DownloadAngular";
+import Footer from "../layouts/Footer";
+import TemplatePhoto from "../layouts/TemplatePhoto";
 
 function Home() {
   return (
@@ -19,6 +23,9 @@ function Home() {
       <HomeMain />
       <BootstrapCarousel />
       <NucleoIcons />
+      <LoginRegister />
+      <DownloadAngular />
+      <Footer template={<TemplatePhoto />}/>
     </>
   );
 }

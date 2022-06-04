@@ -1,8 +1,8 @@
 import React from 'react';
 
-function SocailLink({link, target, content}) {
+function SocailLink({link, target, content, className}) {
   return (
-    <a href={link} target={target}>{content}</a>
+    <a className={className} href={link} target={target}>{content}</a>
   )
 }
 

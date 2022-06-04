@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
+import Footer from '../layouts/Footer';
 
 function Profile() {
   return (
-    <div>Profile</div>
-  )
+    <>
+      <Footer />
+    </>
+  );
 }
 
 export default Profile;
