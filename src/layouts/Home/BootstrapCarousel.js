@@ -1,6 +1,6 @@
 import React from "react";
-import ButtonLink from "../components/ButtonLink";
-import Separator from "../components/Separator";
+import ButtonLink from "../../components/ButtonLink";
+import Separator from "../../components/Separator";
 
 function BootstrapCarousel() {
   return (

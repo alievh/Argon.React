@@ -1,5 +1,13 @@
 .checks-radios {
     padding: 64px 0;
+
+    input {
+
+        &:checked {
+            background-color: $primary;
+
+        }
+    }
     
     .form-switch {
 
@@ -9,6 +17,7 @@
             &:focus {
                 outline: none;
             }
+
         }
     }
 }

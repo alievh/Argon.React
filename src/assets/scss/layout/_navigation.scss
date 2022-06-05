@@ -20,7 +20,6 @@
     }
 
     .menu-dropdown {
-
       li {
         margin-right: 8px;
 
@@ -35,22 +34,86 @@
           }
         }
       }
-    } 
+
+      .examples {
+        position: relative;
+
+        &__drop {
+          display: flex;
+          flex-direction: column;
+          background-color: $white;
+          position: absolute;
+          z-index: 1;
+          top: 65px;
+          visibility: hidden;
+          opacity: 0;
+          transition: 0.2s ease-in-out;
+          border-radius: 5px;
+          padding: 0.5rem 0;
+
+          &::before {
+            background: #fff;
+            box-shadow: none;
+            content: "";
+            display: block;
+            height: 16px;
+            width: 16px;
+            left: 20px;
+            position: absolute;
+            bottom: 100%;
+            transform: rotate(-45deg) translateY(1rem);
+          }
+
+          &.active {
+            visibility: visible;
+            opacity: 2;
+            transform: translateY(0px);
+          }
+
+          &.disable {
+            transform: translateY(20px);
+            z-index: 10;
+          }
+
+          &:hover {
+            visibility: visible;
+            opacity: 2;
+            transform: translateY(0px);
+          }
+
+          li {
+            margin: 0;
+
+            a {
+              cursor: pointer;
+              display: block;
+              padding: 0.8rem 8.5rem 0.5rem 1rem;
+              font-size: 0.875rem;
+              color: $dark;
+            }
+
+            &:hover {
+              background-color: #f6f9fc;
+            }
+          }
+        }
+      }
+    }
 
     .menu-icons {
-      @include justify(unset,center);
+      @include justify(unset, center);
 
       li {
         margin-right: 0.5rem;
-        
+
         a {
           padding: 16px 8px;
           color: $white;
           text-decoration: none;
-          transition: all .15s linear;
+          transition: all 0.15s linear;
 
           &:hover {
-            color: rgba(255,255,255,.65);
+            color: rgba(255, 255, 255, 0.65);
           }
         }
       }

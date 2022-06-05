@@ -1,0 +1,96 @@
+.authentication {
+  background: linear-gradient(87deg, #172b4d 0, #1a174d 100%);
+  text-align: center;
+
+  .card-header {
+    padding: 20px 24px 48px 24px;
+    background-color: $white;
+    border-bottom: none;
+
+    svg {
+      color: $dark;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+
+    a {
+      transition: 0.15s all linear;
+    }
+
+    a:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  .card-body {
+    background-color: #f4f5f7;
+
+    button {
+        transition: 0.15s all linear;
+
+        &:hover {
+            transform: translateY(-2px);
+        }
+    }
+  }
+
+  small {
+    font-size: 13px;
+    color: $gray;
+  }
+
+  .form {
+    .input-group {
+      font-size: 14px;
+      position: relative;
+      box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+
+      svg {
+        position: absolute;
+        font-size: 20px;
+        top: 12px;
+        left: 5px;
+        color: $light;
+        z-index: 500;
+      }
+
+      input {
+        border: none;
+        padding: 10px 0 10px 32px;
+        color: $gray;
+      }
+    }
+
+    .remember {
+      text-align: start;
+
+      input {
+        padding: 8px;
+
+        &:checked {
+          background-color: $primary;
+        }
+      }
+
+      label {
+        color: $light;
+        padding-top: 2px;
+        font-size: 0.875rem;
+        margin-left: 10px;
+      }
+
+      &.privacy {
+          
+        a {
+            text-decoration: none;
+            color: $dark;
+
+            span {
+                color: $primary;
+            }
+        }
+
+      }
+    }
+  }
+}

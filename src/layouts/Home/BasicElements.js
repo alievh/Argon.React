@@ -1,10 +1,10 @@
 import React from "react";
-import Button from "../components/Button";
-import Links from "../components/Links";
-import SubHeading from "../components/SubHeading";
-import CategoryHeading from "../components/CategoryHeading";
+import Button from "../../components/Button";
+import Links from "../../components/Links";
+import SubHeading from "../../components/SubHeading";
+import CategoryHeading from "../../components/CategoryHeading";
 import { RiShoppingBag3Fill } from "react-icons/ri";
-import Heading from "../components/Heading";
+import Heading from "../../components/Heading";
 
 function BasicElements() {
   return (

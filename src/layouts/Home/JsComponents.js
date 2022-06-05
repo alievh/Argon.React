@@ -1,8 +1,8 @@
 import React from 'react';
-import CategoryHeading from '../components/CategoryHeading';
-import Heading from '../components/Heading';
-import SubHeading from '../components/SubHeading';
-import ToolTip from '../components/ToolTip';
+import CategoryHeading from '../../components/CategoryHeading';
+import Heading from '../../components/Heading';
+import SubHeading from '../../components/SubHeading';
+import ToolTip from '../../components/ToolTip';
 
 function JsComponents() {
   return (

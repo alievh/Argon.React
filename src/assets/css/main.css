@@ -18,6 +18,10 @@ ul {
   padding-bottom: 64px;
 }
 
+.pt-64p {
+  padding-top: 64px;
+}
+
 .mt-64p {
   margin-top: 64px;
 }
@@ -462,6 +466,10 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+input:focus {
+  outline: none;
 }
 
 body {
@@ -1050,6 +1058,70 @@ body {
   font-size: 0.9rem;
 }
 
+.nav-bar__menu .menu-dropdown .examples {
+  position: relative;
+}
+
+.nav-bar__menu .menu-dropdown .examples__drop {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  position: absolute;
+  z-index: 1;
+  top: 65px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  border-radius: 5px;
+  padding: 0.5rem 0;
+}
+
+.nav-bar__menu .menu-dropdown .examples__drop::before {
+  background: #fff;
+  box-shadow: none;
+  content: "";
+  display: block;
+  height: 16px;
+  width: 16px;
+  left: 20px;
+  position: absolute;
+  bottom: 100%;
+  transform: rotate(-45deg) translateY(1rem);
+}
+
+.nav-bar__menu .menu-dropdown .examples__drop.active {
+  visibility: visible;
+  opacity: 2;
+  transform: translateY(0px);
+}
+
+.nav-bar__menu .menu-dropdown .examples__drop.disable {
+  transform: translateY(20px);
+  z-index: 10;
+}
+
+.nav-bar__menu .menu-dropdown .examples__drop:hover {
+  visibility: visible;
+  opacity: 2;
+  transform: translateY(0px);
+}
+
+.nav-bar__menu .menu-dropdown .examples__drop li {
+  margin: 0;
+}
+
+.nav-bar__menu .menu-dropdown .examples__drop li a {
+  cursor: pointer;
+  display: block;
+  padding: 0.8rem 8.5rem 0.5rem 1rem;
+  font-size: 0.875rem;
+  color: #212529;
+}
+
+.nav-bar__menu .menu-dropdown .examples__drop li:hover {
+  background-color: #f6f9fc;
+}
+
 .nav-bar__menu .menu-icons {
   display: flex;
   justify-content: unset;
@@ -1064,7 +1136,7 @@ body {
   padding: 16px 8px;
   color: #fff;
   text-decoration: none;
-  transition: all .15s linear;
+  transition: all 0.15s linear;
 }
 
 .nav-bar__menu .menu-icons li a:hover {
@@ -1106,60 +1178,6 @@ body {
 
 .footer .img-container:hover {
   transform: translateY(-15px);
-}
-
-.footer .support h3 {
-  color: #5e72e4;
-  font-size: 1.75rem;
-  font-weight: 300;
-}
-
-.footer .support h4 {
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
-.footer .support .footer-links a {
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 38px;
-  height: 38px;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-  margin-right: 8px;
-}
-
-.footer .support .footer-links a:hover {
-  transform: translateY(-1px);
-}
-
-.footer .support .footer-links__twitter {
-  background-color: #1da1f2;
-}
-
-.footer .support .footer-links__facebook {
-  background-color: #3b5999;
-}
-
-.footer .support .footer-links__dribbble {
-  background-color: #ea4c89;
-}
-
-.footer .support .footer-links__github {
-  background-color: #222;
-}
-
-.footer .support .copyright {
-  width: 100%;
-  font-size: 14px;
-  color: #8898aa;
-}
-
-.footer .support .copyright a {
-  padding: 0;
-  margin-left: 5px;
 }
 
 .intro {
@@ -1220,6 +1238,10 @@ body {
 
 .checks-radios {
   padding: 64px 0;
+}
+
+.checks-radios input:checked {
+  background-color: #5e72e4;
 }
 
 .checks-radios .form-switch input {
@@ -1331,5 +1353,241 @@ body {
 
 .nucleo-icons .btn:hover {
   transform: translateY(-2px);
+}
+
+.support h3 {
+  color: #5e72e4;
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+.support h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.support .footer-links a {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin-right: 8px;
+}
+
+.support .footer-links a:hover {
+  transform: translateY(-1px);
+}
+
+.support .footer-links__twitter {
+  background-color: #1da1f2;
+}
+
+.support .footer-links__facebook {
+  background-color: #3b5999;
+}
+
+.support .footer-links__dribbble {
+  background-color: #ea4c89;
+}
+
+.support .footer-links__github {
+  background-color: #222;
+}
+
+.support .copyright {
+  width: 100%;
+  font-size: 14px;
+  color: #8898aa;
+}
+
+.support .copyright a {
+  padding: 0;
+  margin-left: 5px;
+}
+
+.authentication {
+  background: linear-gradient(87deg, #172b4d 0, #1a174d 100%);
+  text-align: center;
+}
+
+.authentication .card-header {
+  padding: 20px 24px 48px 24px;
+  background-color: #fff;
+  border-bottom: none;
+}
+
+.authentication .card-header svg {
+  color: #212529;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.authentication .card-header a {
+  transition: 0.15s all linear;
+}
+
+.authentication .card-header a:hover {
+  transform: translateY(-2px);
+}
+
+.authentication .card-body {
+  background-color: #f4f5f7;
+}
+
+.authentication .card-body button {
+  transition: 0.15s all linear;
+}
+
+.authentication .card-body button:hover {
+  transform: translateY(-2px);
+}
+
+.authentication small {
+  font-size: 13px;
+  color: #8898aa;
+}
+
+.authentication .form .input-group {
+  font-size: 14px;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+
+.authentication .form .input-group svg {
+  position: absolute;
+  font-size: 20px;
+  top: 12px;
+  left: 5px;
+  color: #adb5bd;
+  z-index: 500;
+}
+
+.authentication .form .input-group input {
+  border: none;
+  padding: 10px 0 10px 32px;
+  color: #8898aa;
+}
+
+.authentication .form .remember {
+  text-align: start;
+}
+
+.authentication .form .remember input {
+  padding: 8px;
+}
+
+.authentication .form .remember input:checked {
+  background-color: #5e72e4;
+}
+
+.authentication .form .remember label {
+  color: #adb5bd;
+  padding-top: 2px;
+  font-size: 0.875rem;
+  margin-left: 10px;
+}
+
+.authentication .form .remember.privacy a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.authentication .form .remember.privacy a span {
+  color: #5e72e4;
+}
+
+.authentication {
+  background: linear-gradient(87deg, #172b4d 0, #1a174d 100%);
+  text-align: center;
+}
+
+.authentication .card-header {
+  padding: 20px 24px 48px 24px;
+  background-color: #fff;
+  border-bottom: none;
+}
+
+.authentication .card-header svg {
+  color: #212529;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.authentication .card-header a {
+  transition: 0.15s all linear;
+}
+
+.authentication .card-header a:hover {
+  transform: translateY(-2px);
+}
+
+.authentication .card-body {
+  background-color: #f4f5f7;
+}
+
+.authentication .card-body button {
+  transition: 0.15s all linear;
+}
+
+.authentication .card-body button:hover {
+  transform: translateY(-2px);
+}
+
+.authentication small {
+  font-size: 13px;
+  color: #8898aa;
+}
+
+.authentication .form .input-group {
+  font-size: 14px;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+
+.authentication .form .input-group svg {
+  position: absolute;
+  font-size: 20px;
+  top: 12px;
+  left: 5px;
+  color: #adb5bd;
+  z-index: 500;
+}
+
+.authentication .form .input-group input {
+  border: none;
+  padding: 10px 0 10px 32px;
+  color: #8898aa;
+}
+
+.authentication .form .remember {
+  text-align: start;
+}
+
+.authentication .form .remember input {
+  padding: 8px;
+}
+
+.authentication .form .remember input:checked {
+  background-color: #5e72e4;
+}
+
+.authentication .form .remember label {
+  color: #adb5bd;
+  padding-top: 2px;
+  font-size: 0.875rem;
+  margin-left: 10px;
+}
+
+.authentication .form .remember.privacy a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.authentication .form .remember.privacy a span {
+  color: #5e72e4;
 }
 /*# sourceMappingURL=main.css.map */

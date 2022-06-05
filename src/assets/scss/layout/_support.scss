@@ -1,0 +1,59 @@
+.support {
+
+    h3 {
+        color: $primary;
+        font-size: 1.75rem;
+        font-weight: 300;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    .footer-links {
+
+        a {
+            color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+            margin-right: 8px;
+
+            &:hover {
+                transform: translateY(-1px);
+            }
+        }
+
+        &__twitter {
+            background-color: #1da1f2;
+        }
+
+        &__facebook {
+            background-color: #3b5999;
+        }
+
+        &__dribbble {
+            background-color: #ea4c89;
+        }
+
+        &__github {
+            background-color: #222;
+        }
+    }
+
+    .copyright {
+        width: 100%;
+        font-size: 14px;
+        color: $gray;
+
+        a {
+            padding: 0;
+            margin-left: 5px;
+        }
+    }
+}

@@ -1,12 +1,12 @@
 import React from "react";
-import Tab from "../components/Tab";
-import CategoryHeading from "../components/CategoryHeading";
-import ProgressBar from "../components/ProgressBar";
-import SubHeading from "../components/SubHeading";
-import NavigationPill from "../components/NavigationPill";
+import Tab from "../../components/Tab";
+import CategoryHeading from "../../components/CategoryHeading";
+import ProgressBar from "../../components/ProgressBar";
+import SubHeading from "../../components/SubHeading";
+import NavigationPill from "../../components/NavigationPill";
 import { FaReact, FaComment } from "react-icons/fa";
 import { IoMdCloudDownload } from "react-icons/io";
-import BadgePill from "../components/BadgePill";
+import BadgePill from "../../components/BadgePill";
 
 function Tabs() {
   return (

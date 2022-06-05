@@ -1,8 +1,8 @@
 import React from "react";
-import Avatar from "../components/Avatar";
-import Heading from "../components/Heading";
-import HeadingComponent from "../components/HeadingComponent";
-import SubHeading from "../components/SubHeading";
+import Avatar from "../../components/Avatar";
+import Heading from "../../components/Heading";
+import HeadingComponent from "../../components/HeadingComponent";
+import SubHeading from "../../components/SubHeading";
 
 function Typography() {
   return (

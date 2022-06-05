@@ -1,8 +1,8 @@
 import React from "react";
-import CheckRadio from "../components/CheckRadio";
-import CategoryHeading from "../components/CategoryHeading";
-import SubHeading from "../components/SubHeading";
-import Menu from "../components/Menu";
+import CheckRadio from "../../components/CheckRadio";
+import CategoryHeading from "../../components/CategoryHeading";
+import SubHeading from "../../components/SubHeading";
+import Menu from "../../components/Menu";
 import { BsHeartFill } from "react-icons/bs";
 import { IoMdSettings, IoIosMegaphone } from "react-icons/io";
 

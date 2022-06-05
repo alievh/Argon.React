@@ -23,6 +23,18 @@ function Navbar() {
     this.oldScroll = this.scrollY;
   };
 
+  function dropDown() {
+    let dropDown = document.querySelector('.examples__drop');
+    dropDown.classList.remove('disable');
+    dropDown.classList.add('active');
+  }
+
+  function dropUp() {
+    let dropUp = document.querySelector('.examples__drop');
+    dropUp.classList.remove('active');
+    dropUp.classList.add('disable');
+  }
+
   return (
     <Header>
       <nav className={isTop ? "nav-bar" : isScrollUp ? "nav-bar sticky" : "nav-bar hide"}>
@@ -46,9 +58,15 @@ function Navbar() {
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a className={"examples"} onMouseEnter={dropDown} onMouseLeave={dropUp} href="#">
                       <span>Examples</span>
                     </a>
+                    <ul className="examples__drop disable">
+                      <li><Link to="/landing">Landing</Link></li>
+                      <li><Link to="/profile">Profile</Link></li>
+                      <li><Link to="/login">Login</Link></li>
+                      <li><Link to="/register">Register</Link></li>
+                    </ul>
                   </li>
                 </ul>
                 <ul className="menu-icons">

@@ -1,8 +1,8 @@
 import React from "react";
-import ButtonLink from "../components/ButtonLink";
+import ButtonLink from "../../components/ButtonLink";
 import { AiFillGithub } from "react-icons/ai";
 import { FaCloudDownloadAlt } from "react-icons/fa";
-import Separator from "../components/Separator";
+import Separator from "../../components/Separator";
 
 function Intro() {
   return (
