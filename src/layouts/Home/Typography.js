@@ -1,7 +1,7 @@
 import React from "react";
-import Avatar from "../../components/Avatar";
-import Heading from "../../components/Heading";
-import HeadingComponent from "../../components/HeadingComponent";
+import Avatar from "../../components/UI/Avatar";
+import Heading from "../../components/UI/Heading";
+import HeadingComponent from "../../components/UI/HeadingComponent";
 import SubHeading from "../../components/SubHeading";
 
 function Typography() {
@@ -199,38 +199,46 @@ function Typography() {
         />
         <Heading className={"mb-5 mt-96p heading"} content={"Images"} />
         <div className="row avatar-section">
-          <Avatar
-            title={"Image"}
-            alt={"Image"}
-            src={
-              "https://demos.creative-tim.com/argon-design-system-angular/assets/img/theme/team-1-800x800.jpg"
-            }
-            imgClass={"img-fluid rounded shadow"}
-          />
-          <Avatar
-            title={"Circle Image"}
-            alt={"Circle Image"}
-            src={
-              "https://demos.creative-tim.com/argon-design-system-angular/assets/img/theme/team-2-800x800.jpg"
-            }
-            imgClass={"img-fluid rounded-circle shadow"}
-          />
-          <Avatar
-            title={"Raised"}
-            alt={"Raised"}
-            src={
-              "https://demos.creative-tim.com/argon-design-system-angular/assets/img/theme/team-3-800x800.jpg"
-            }
-            imgClass={"img-fluid rounded shadow-lg"}
-          />
-          <Avatar
-            title={"Circle Raised"}
-            alt={"Circle Raised"}
-            src={
-              "https://demos.creative-tim.com/argon-design-system-angular/assets/img/theme/team-4-800x800.jpg"
-            }
-            imgClass={"img-fluid rounded-circle shadow-lg"}
-          />
+          <div className="col-sm-3 col-6">
+            <Avatar
+              title={<small>Image</small>}
+              alt={"Image"}
+              src={
+                "https://demos.creative-tim.com/argon-design-system-angular/assets/img/theme/team-1-800x800.jpg"
+              }
+              imgClass={"img-fluid rounded shadow"}
+            />
+          </div>
+          <div className="col-sm-3 col-6">
+            <Avatar
+              title={<small>Circle Image</small>}
+              alt={"Circle Image"}
+              src={
+                "https://demos.creative-tim.com/argon-design-system-angular/assets/img/theme/team-2-800x800.jpg"
+              }
+              imgClass={"img-fluid rounded-circle shadow"}
+            />
+          </div>
+          <div className="col-sm-3 col-6">
+            <Avatar
+              title={<small>Raised</small>}
+              alt={"Raised"}
+              src={
+                "https://demos.creative-tim.com/argon-design-system-angular/assets/img/theme/team-3-800x800.jpg"
+              }
+              imgClass={"img-fluid rounded shadow-lg"}
+            />
+          </div>
+          <div className="col-sm-3 col-6">
+            <Avatar
+              title={<small>Circle Raised</small>}
+              alt={"Circle Raised"}
+              src={
+                "https://demos.creative-tim.com/argon-design-system-angular/assets/img/theme/team-4-800x800.jpg"
+              }
+              imgClass={"img-fluid rounded-circle shadow-lg"}
+            />
+          </div>
         </div>
       </div>
     </section>

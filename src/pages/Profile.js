@@ -1,10 +1,12 @@
 import React from "react";
-import Footer from '../layouts/Footer';
+import ProfileBakcground from "../layouts/Profile/ProfileBakcground";
+import UserInfo from "../layouts/Profile/UserInfo";
 
 function Profile() {
   return (
     <>
-      <Footer />
+      <ProfileBakcground />
+      <UserInfo />
     </>
   );
 }

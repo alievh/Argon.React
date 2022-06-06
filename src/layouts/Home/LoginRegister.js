@@ -1,18 +1,23 @@
 import React from "react";
-import ButtonLink from "../../components/ButtonLink";
-import Separator from "../../components/Separator";
+import ButtonLink from "../../components/Buttons/ButtonLink";
+import Separator from "../../components/UI/Separator";
+import LoginCard from "../../components/LoginCard";
 
 function LoginRegister() {
   return (
     <section className="login-register">
       <div className="container py-64p">
-        <div className="row">
-          <div className="col-lg-6">
-            <h3>A beautiful Design System <span>completed with examples</span></h3>
+        <div className="row justify-content-between aling-items-center">
+          <div className="col-lg-6 d-flex flex-column justify-content-center">
+            <h3>
+              A beautiful Design System <span>completed with examples</span>
+            </h3>
             <p className="mb-2">
-              The official package contains over 21.000 icons which are looking
-              great in combination with Argon Design System. Make sure you check
-              all of them and use those that you like the most.
+              The Design System comes with four pre-built pages to help you get
+              started faster. You can change the text and images and you're good
+              to go. More importantly, looking at them will give you a picture
+              of what you can built with this powerful Bootstrap 4 Design
+              System.
             </p>
             <div className="btn-wrapper mt-5">
               <ButtonLink
@@ -29,7 +34,11 @@ function LoginRegister() {
               />
             </div>
           </div>
-          <div className="col-lg-5"></div>
+          <div className="col-lg-5">
+            <div className="authentication">
+              <LoginCard buttonText={"SIGN IN"} />
+            </div>
+          </div>
         </div>
       </div>
       <Separator />

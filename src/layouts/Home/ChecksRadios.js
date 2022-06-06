@@ -1,6 +1,6 @@
 import React from "react";
-import CheckRadio from "../../components/CheckRadio";
-import CategoryHeading from "../../components/CategoryHeading";
+import CheckRadio from "../../components/UI/CheckRadio";
+import CategoryHeading from "../../components/UI/CategoryHeading";
 import SubHeading from "../../components/SubHeading";
 import Menu from "../../components/Menu";
 import { BsHeartFill } from "react-icons/bs";

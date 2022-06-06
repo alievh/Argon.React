@@ -1,0 +1,72 @@
+.user-info {
+  padding: 64px 0;
+
+  .card-profile {
+      margin-top: -300px;
+  }
+
+  &__avatar {
+    transform: translate(-50%, -30%);
+    position: absolute;
+    left: 50%;
+    transition: all 0.15s ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: translate(-50%, -35%);
+    }
+  }
+
+  .statistic {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 1rem;
+    padding: 0.875rem;
+
+    &__count {
+      font-size: 1.1rem;
+      font-weight: 700;
+      display: block;
+      color: $dark;
+      margin-bottom: 10px;
+    }
+
+    &__name {
+      font-size: 0.875rem;
+      color: #adb5bd;
+    }
+  }
+
+  &__fullname {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__country {
+    margin-bottom: 0.5rem;
+    span {
+      font-weight: 300;
+    }
+  }
+
+  &__profession {
+    font-size: 1rem;
+    margin: 24px 0 8px 0;
+  }
+
+  &__university {
+      margin-top: 15px;
+  }
+
+  &__information {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+
+    a {
+        text-decoration: none;
+    }
+  }
+}

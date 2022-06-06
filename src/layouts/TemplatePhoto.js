@@ -3,7 +3,8 @@ import Template from './Template'
 
 function TemplatePhoto() {
   return (
-    <div className='container-lg'>
+    <section className='template-photo'>
+      <div className='container-lg'>
         <div className='row'>
             <div className='col-md-6 mb-5 mb-md-0 img-container'>
                 <Template location={"https://demos.creative-tim.com/argon-design-system-angular/#/landing"} imgClassName={"rounded img-fluid"} alt={"Landing Page"} src={"https://demos.creative-tim.com/argon-design-system-angular/assets/img/theme/landing.jpg"} />
@@ -13,6 +14,7 @@ function TemplatePhoto() {
             </div>
         </div>
     </div>
+    </section>
   )
 }
 

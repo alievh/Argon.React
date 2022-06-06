@@ -15,7 +15,7 @@ function CheckRadio({
   let [checked, setChecked] = useState(check);
 
   function isChecked() {
-    if (checked == true) {
+    if (checked === true) {
       setChecked(false);
     } else {
       setChecked(true);

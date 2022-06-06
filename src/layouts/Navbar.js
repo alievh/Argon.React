@@ -6,15 +6,15 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { FaTwitterSquare } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { FaCloudDownloadAlt } from "react-icons/fa";
-import SocailLink from "../components/SocailLink";
-import ButtonLink from "../components/ButtonLink";
+import SocailLink from "../components/UI/SocailLink";
+import ButtonLink from "../components/Buttons/ButtonLink";
 
 function Navbar() {
   let [isScrollUp, setIsScrollUp] = useState(true);
   let [isTop, setIsTop] = useState(true);
 
   window.onscroll = function (e) {
-    if (this.scrollY == 0) {
+    if (this.scrollY === 0) {
       setIsTop(true);
     }else {
       setIsTop(false);

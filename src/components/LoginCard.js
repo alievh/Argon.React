@@ -1,12 +1,40 @@
 import React from "react";
-import ButtonLink from "../../components/ButtonLink";
+import ButtonLink from "./Buttons/ButtonLink";
 import { FaGithub } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { HiMail } from "react-icons/hi";
 import { GiPadlockOpen } from "react-icons/gi";
-import Button from "../../components/Button";
+import Button from "./Buttons/Button";
+import { useNavigate } from "react-router-dom";
+import { getFullName } from "../layouts/Profile/UserInfo";
 
-function Login({buttonText}) {
+function Login({ buttonText }) {
+  let navigate = useNavigate();
+
+  function getUserInfo(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    const form = document.querySelector(".form");
+    const formData = new FormData(form);
+
+    for (let i = 0; i < localStorage.length; i++) {
+      const newUser = JSON.parse(localStorage.getItem(formData.get("email")));
+      console.log(formData.get("email"));
+      console.log(newUser["email"]);
+      if (
+        formData.get("email") === newUser["email"] &&
+        formData.get("password") === newUser["password"]
+      ) {
+        console.log("hello");
+        sessionStorage.setItem("loggedUser", JSON.stringify(newUser));
+        getFullName();
+        navigate("/profile");
+      } else {
+        alert("Email or Password is invalid");
+      }
+    }
+  }
+
   return (
     <div className="card">
       <div className="card-header">
@@ -32,11 +60,12 @@ function Login({buttonText}) {
         <div className="mb-3">
           <small>Or sign in with credentials</small>
         </div>
-        <form className="form">
+        <form className="form" onSubmit={getUserInfo}>
           <div className="input-group mb-3">
             <HiMail />
             <input
               type="email"
+              name="email"
               className="form-control"
               placeholder="Email"
               aria-label="Email"
@@ -46,6 +75,7 @@ function Login({buttonText}) {
             <GiPadlockOpen />
             <input
               type="password"
+              name="password"
               className="form-control"
               placeholder="Password"
               aria-label="Password"
@@ -58,9 +88,7 @@ function Login({buttonText}) {
                 type="checkbox"
                 id="flexCheckDefault"
               />
-              <label htmlFor="flexCheckDefault">
-                Remember me
-              </label>
+              <label htmlFor="flexCheckDefault">Remember me</label>
             </div>
           </div>
           <div>

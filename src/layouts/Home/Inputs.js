@@ -1,6 +1,6 @@
 import React from "react";
 import SubHeading from "../../components/SubHeading";
-import CategoryHeading from "../../components/CategoryHeading";
+import CategoryHeading from "../../components/UI/CategoryHeading";
 import Input from "../../components/Input";
 
 function Inputs() {

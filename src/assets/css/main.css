@@ -1153,13 +1153,12 @@ body {
   top: -80px;
 }
 
-.footer {
-  padding: 100px 0 48px;
+.template-photo {
+  padding: 100px 0 0 0;
   position: relative;
-  overflow: hidden;
 }
 
-.footer::before {
+.template-photo::before {
   content: "";
   z-index: -1;
   position: absolute;
@@ -1172,12 +1171,18 @@ body {
   transform: skew(0, -8deg);
 }
 
-.footer .img-container {
+.template-photo .img-container {
   transition: 0.15s all linear;
 }
 
-.footer .img-container:hover {
+.template-photo .img-container:hover {
   transform: translateY(-15px);
+}
+
+.footer {
+  padding: 0 0 48px 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .intro {
@@ -1299,6 +1304,10 @@ body {
   line-height: 1.7;
   margin-top: 1.5rem;
   color: #fff;
+}
+
+.login-register .authentication {
+  transform: scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg);
 }
 
 .download-angular {
@@ -1589,5 +1598,182 @@ body {
 
 .authentication .form .remember.privacy a span {
   color: #5e72e4;
+}
+
+.authentication {
+  background: linear-gradient(87deg, #172b4d 0, #1a174d 100%);
+  text-align: center;
+}
+
+.authentication .card-header {
+  padding: 20px 24px 48px 24px;
+  background-color: #fff;
+  border-bottom: none;
+}
+
+.authentication .card-header svg {
+  color: #212529;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.authentication .card-header a {
+  transition: 0.15s all linear;
+}
+
+.authentication .card-header a:hover {
+  transform: translateY(-2px);
+}
+
+.authentication .card-body {
+  background-color: #f4f5f7;
+}
+
+.authentication .card-body button {
+  transition: 0.15s all linear;
+}
+
+.authentication .card-body button:hover {
+  transform: translateY(-2px);
+}
+
+.authentication small {
+  font-size: 13px;
+  color: #8898aa;
+}
+
+.authentication .form .input-group {
+  font-size: 14px;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+
+.authentication .form .input-group svg {
+  position: absolute;
+  font-size: 20px;
+  top: 12px;
+  left: 5px;
+  color: #adb5bd;
+  z-index: 500;
+}
+
+.authentication .form .input-group input {
+  border: none;
+  padding: 10px 0 10px 32px;
+  color: #8898aa;
+}
+
+.authentication .form .remember {
+  text-align: start;
+}
+
+.authentication .form .remember input {
+  padding: 8px;
+}
+
+.authentication .form .remember input:checked {
+  background-color: #5e72e4;
+}
+
+.authentication .form .remember label {
+  color: #adb5bd;
+  padding-top: 2px;
+  font-size: 0.875rem;
+  margin-left: 10px;
+}
+
+.authentication .form .remember.privacy a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.authentication .form .remember.privacy a span {
+  color: #5e72e4;
+}
+
+.profile-background {
+  height: 580px;
+  width: 100%;
+  position: relative;
+}
+
+.profile-background__cover {
+  height: 100%;
+  background: linear-gradient(150deg, #281483 15%, #8f6ed5 70%, #d782d9 94%);
+  width: 100%;
+}
+
+.user-info {
+  padding: 64px 0;
+}
+
+.user-info .card-profile {
+  margin-top: -300px;
+}
+
+.user-info__avatar {
+  transform: translate(-50%, -30%);
+  position: absolute;
+  left: 50%;
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+
+.user-info__avatar:hover {
+  transform: translate(-50%, -35%);
+}
+
+.user-info .statistic {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 1rem;
+  padding: 0.875rem;
+}
+
+.user-info .statistic__count {
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: block;
+  color: #212529;
+  margin-bottom: 10px;
+}
+
+.user-info .statistic__name {
+  font-size: 0.875rem;
+  color: #adb5bd;
+}
+
+.user-info__fullname {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.user-info__country {
+  margin-bottom: 0.5rem;
+}
+
+.user-info__country span {
+  font-weight: 300;
+}
+
+.user-info__profession {
+  font-size: 1rem;
+  margin: 24px 0 8px 0;
+}
+
+.user-info__university {
+  margin-top: 15px;
+}
+
+.user-info__information {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.user-info__information a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */

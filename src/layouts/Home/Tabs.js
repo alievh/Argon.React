@@ -1,12 +1,12 @@
 import React from "react";
-import Tab from "../../components/Tab";
-import CategoryHeading from "../../components/CategoryHeading";
-import ProgressBar from "../../components/ProgressBar";
+import Tab from "../../components/UI/Tab";
+import CategoryHeading from "../../components/UI/CategoryHeading";
+import ProgressBar from "../../components/UI/ProgressBar";
 import SubHeading from "../../components/SubHeading";
-import NavigationPill from "../../components/NavigationPill";
+import NavigationPill from "../../components/UI/NavigationPill";
 import { FaReact, FaComment } from "react-icons/fa";
 import { IoMdCloudDownload } from "react-icons/io";
-import BadgePill from "../../components/BadgePill";
+import BadgePill from "../../components/UI/BadgePill";
 
 function Tabs() {
   return (
@@ -79,11 +79,36 @@ function Tabs() {
           <div className="col-lg-5">
             <SubHeading className={"mb-5 sub-heading"} content={"Labels"} />
             <ul className="d-flex">
-              <li><BadgePill content={"primary"} className={"badge-pill spanbg-primary span-primary"} /></li>
-              <li><BadgePill content={"success"} className={"badge-pill spanbg-success span-success"} /></li>
-              <li><BadgePill content={"danger"} className={"badge-pill spanbg-danger span-danger"} /></li>
-              <li><BadgePill content={"warning"} className={"badge-pill spanbg-warning span-warning"} /></li>
-              <li><BadgePill content={"info"} className={"badge-pill spanbg-info span-info"} /></li>
+              <li>
+                <BadgePill
+                  content={"primary"}
+                  className={"badge-pill spanbg-primary span-primary"}
+                />
+              </li>
+              <li>
+                <BadgePill
+                  content={"success"}
+                  className={"badge-pill spanbg-success span-success"}
+                />
+              </li>
+              <li>
+                <BadgePill
+                  content={"danger"}
+                  className={"badge-pill spanbg-danger span-danger"}
+                />
+              </li>
+              <li>
+                <BadgePill
+                  content={"warning"}
+                  className={"badge-pill spanbg-warning span-warning"}
+                />
+              </li>
+              <li>
+                <BadgePill
+                  content={"info"}
+                  className={"badge-pill spanbg-info span-info"}
+                />
+              </li>
             </ul>
           </div>
         </div>

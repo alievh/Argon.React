@@ -1,11 +1,11 @@
-import React from 'react';
-import Authentication from '../layouts/Authentication';
-import LoginCard from '../layouts/Login/LoginCard';
+import React from "react";
+import Authentication from "../layouts/Login-Register/Authentication";
+import LoginCard from "../components/LoginCard";
 
 function Login() {
   return (
-    <Authentication loginOrRegister={<LoginCard buttonText={"SIGN IN"} />} />
-  )
+      <Authentication loginOrRegister={<LoginCard buttonText={"SIGN IN"} />} />
+  );
 }
 
 export default Login;

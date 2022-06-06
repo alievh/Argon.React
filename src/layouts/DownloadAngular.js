@@ -1,6 +1,6 @@
 import React from "react";
-import ButtonLink from "../components/ButtonLink";
-import ProgramLogo from "../components/ProgramLogo";
+import ButtonLink from "../components/Buttons/ButtonLink";
+import ProgramLogo from "../components/UI/ProgramLogo";
 
 function DownloadAngular() {
   return (

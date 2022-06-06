@@ -1,5 +1,5 @@
 import React from "react";
-import Heading from "../components/Heading";
+import Heading from "../components/UI/Heading";
 import Menu from "../components/Menu";
 import { BsHeartFill, BsPinterest } from "react-icons/bs";
 import { IoMdSettings, IoIosMegaphone, IoLogoGoogleplus } from "react-icons/io";

@@ -1,12 +1,12 @@
 import React from "react";
-import SocailLink from "../components/SocailLink";
+import SocailLink from "../components/UI/SocailLink";
 import {
   FaTwitter,
   FaFacebookSquare,
   FaDribbble,
   FaGithub,
 } from "react-icons/fa";
-import Links from "../components/Links";
+import Links from "../components/Buttons/Links";
 
 function Support() {
   return (

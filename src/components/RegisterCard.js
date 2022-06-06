@@ -1,13 +1,32 @@
 import React from "react";
-import ButtonLink from "../../components/ButtonLink";
+import ButtonLink from "./Buttons/ButtonLink";
 import { FaGithub } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { HiMail } from "react-icons/hi";
 import { GiPadlockOpen } from "react-icons/gi";
 import { GiGraduateCap } from "react-icons/gi";
-import Button from "../../components/Button";
+import Button from "./Buttons/Button";
+import { useNavigate } from "react-router-dom";
 
-function RegisterCard({buttonText}) {
+function RegisterCard({ buttonText }) {
+  let navigate = useNavigate();
+
+  function getUserInfo(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    const form = document.querySelector(".form");
+    const formData = new FormData(form);
+    const newUser = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      password: formData.get("password"),
+    };
+
+    localStorage.setItem(newUser.email, JSON.stringify(newUser));
+
+    navigate("/login");
+  }
+
   return (
     <div className="card">
       <div className="card-header">
@@ -33,11 +52,12 @@ function RegisterCard({buttonText}) {
         <div className="mb-3">
           <small>Or sign in with credentials</small>
         </div>
-        <form className="form">
+        <form className="form" onSubmit={getUserInfo}>
           <div className="input-group mb-3">
             <GiGraduateCap />
             <input
               type="text"
+              name="name"
               className="form-control"
               placeholder="Name"
               aria-label="Name"
@@ -47,6 +67,7 @@ function RegisterCard({buttonText}) {
             <HiMail />
             <input
               type="email"
+              name="email"
               className="form-control"
               placeholder="Email"
               aria-label="Email"
@@ -56,6 +77,7 @@ function RegisterCard({buttonText}) {
             <GiPadlockOpen />
             <input
               type="password"
+              name="password"
               className="form-control"
               placeholder="Password"
               aria-label="Password"
@@ -68,7 +90,11 @@ function RegisterCard({buttonText}) {
                 type="checkbox"
                 id="flexCheckDefault"
               />
-              <label htmlFor="flexCheckDefault"><a href="">I agree with the <span>Privacy Policy</span></a></label>
+              <label htmlFor="flexCheckDefault">
+                <a href="">
+                  I agree with the <span>Privacy Policy</span>
+                </a>
+              </label>
             </div>
           </div>
           <div>

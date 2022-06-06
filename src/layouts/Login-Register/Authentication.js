@@ -1,6 +1,4 @@
 import React from "react";
-import Support from "./Support";
-import LoginCard from "./Login/LoginCard";
 
 function Authentication({ loginOrRegister }) {
   return (
@@ -12,7 +10,6 @@ function Authentication({ loginOrRegister }) {
           </div>
         </div>
       </section>
-      <Support />
     </>
   );
 }

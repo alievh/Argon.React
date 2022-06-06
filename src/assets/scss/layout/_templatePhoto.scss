@@ -1,0 +1,25 @@
+.template-photo {
+    padding: 100px 0 0 0;
+    position: relative;
+
+    &::before {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 200px;
+        width: 100%;
+        height: 2000px;
+        background: #f4f5f7;
+        transform: skew(0,-8deg);
+    }
+
+    .img-container {
+        transition: 0.15s all linear;
+
+        &:hover {
+            transform: translateY(-15px);
+        }
+    }
+}

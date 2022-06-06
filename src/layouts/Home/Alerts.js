@@ -1,6 +1,6 @@
 import React from "react";
-import Heading from "../../components/Heading";
-import Alert from "../../components/Alert";
+import Heading from "../../components/UI/Heading";
+import Alert from "../../components/UI/Alert";
 import { AiFillLike } from "react-icons/ai";
 import {FaBell} from 'react-icons/fa';
 import {MdSupport} from 'react-icons/md'

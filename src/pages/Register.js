@@ -1,6 +1,6 @@
 import React from 'react';
-import Authentication from '../layouts/Authentication';
-import RegisterCard from '../layouts/Register/RegisterCard';
+import Authentication from '../layouts/Login-Register/Authentication';
+import RegisterCard from '../components/RegisterCard';
 
 function Register() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import ButtonLink from "../../components/ButtonLink";
-import Heading from "../../components/Heading";
+import ButtonLink from "../../components/Buttons/ButtonLink";
+import Heading from "../../components/UI/Heading";
 
 function NucleoIcons() {
   return (
