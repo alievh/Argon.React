@@ -16,22 +16,23 @@ function Login({ buttonText }) {
     e.stopPropagation();
     const form = document.querySelector(".form");
     const formData = new FormData(form);
+    let isLogged = false;
 
     for (let i = 0; i < localStorage.length; i++) {
       const newUser = JSON.parse(localStorage.getItem(formData.get("email")));
-      console.log(formData.get("email"));
-      console.log(newUser["email"]);
       if (
         formData.get("email") === newUser["email"] &&
         formData.get("password") === newUser["password"]
       ) {
-        console.log("hello");
         sessionStorage.setItem("loggedUser", JSON.stringify(newUser));
         getFullName();
+        isLogged = true;
         navigate("/profile");
-      } else {
-        alert("Email or Password is invalid");
       }
+    }
+
+    if (isLogged === false) {
+      alert("Email or Password is invalid");
     }
   }
 

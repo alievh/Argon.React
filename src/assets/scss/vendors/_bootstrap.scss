@@ -35,6 +35,10 @@ ul {
   margin-top: 96px;
 }
 
+.mb-96p {
+  margin-bottom: 96px;
+}
+
 .btn {
   font-size: 0.875rem;
   font-weight: 600;
@@ -240,7 +244,6 @@ ul {
   color: $danger !important;
 }
 
-
 .bg-default {
   background-color: $default;
 }
@@ -266,23 +269,27 @@ ul {
 }
 
 .spanbg-primary {
-  background-color: rgba(203,210,246,.5);
+  background-color: rgba(203, 210, 246, 0.5);
+}
+
+.spanbg-white {
+  background-color: $white;
 }
 
 .spanbg-success {
-  background-color: rgba(147,231,195,.5);
+  background-color: rgba(147, 231, 195, 0.5);
 }
 
 .spanbg-info {
-  background-color: rgba(136,230,247,.5);
+  background-color: rgba(136, 230, 247, 0.5);
 }
 
 .spanbg-danger {
-  background-color: rgba(251,175,190,.5);
+  background-color: rgba(251, 175, 190, 0.5);
 }
 
 .spanbg-warning {
-  background-color: rgba(254,201,189,.5);
+  background-color: rgba(254, 201, 189, 0.5);
 }
 
 .textcolor-primary {
@@ -303,4 +310,11 @@ ul {
 
 .textcolor-danger {
   color: $danger;
+}
+
+button {
+  transition: 0.15s all linear;
+  &:hover {
+    transform: translateY(-2px);
+  }
 }

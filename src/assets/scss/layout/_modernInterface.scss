@@ -1,0 +1,53 @@
+.modern-interface {
+  padding-top: 64px;
+  background: linear-gradient(87deg, #fb6340 0, #fbb140 100%);
+  position: relative;
+
+  &__left {
+    .shadow {
+      width: 60px;
+      height: 60px;
+
+      svg {
+        font-size: 26px;
+      }
+    }
+
+    h4 {
+      font-size: 2.1875rem;
+      font-weight: 600;
+      line-height: 1.5;
+      color: $white;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.7;
+      color: $white;
+    }
+  }
+  .interface-card {
+    background-color: $white;
+    padding: 24px;
+
+    h5 {
+      font-weight: 400;
+      line-height: 1.5;
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+
+    a {
+        font-size: 16px;
+        font-weight: 400;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.awsome-features {
+  padding: 96px 0;
+
+  &__left {
+    padding-right: 64px;
+
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    .shadow {
+      width: 60px;
+      height: 60px;
+
+      svg {
+        font-size: 28px;
+      }
+    }
+
+    ul {
+
+      li {
+        padding: 8px 0;
+        display: flex;
+
+        .shadow {
+          width: 35px;
+          height: 35px;
+  
+          svg {
+            font-size: 16px;
+          }
+        }
+
+        h6 {
+          display: inline-block;
+          padding-top: 8px;
+        }
+      }
+      
+    }
+  }
+}

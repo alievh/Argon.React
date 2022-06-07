@@ -207,6 +207,7 @@ function Typography() {
                 "https://demos.creative-tim.com/argon-design-system-angular/assets/img/theme/team-1-800x800.jpg"
               }
               imgClass={"img-fluid rounded shadow"}
+              width={"150px"}
             />
           </div>
           <div className="col-sm-3 col-6">
@@ -217,6 +218,7 @@ function Typography() {
                 "https://demos.creative-tim.com/argon-design-system-angular/assets/img/theme/team-2-800x800.jpg"
               }
               imgClass={"img-fluid rounded-circle shadow"}
+              width={"150px"}
             />
           </div>
           <div className="col-sm-3 col-6">
@@ -227,6 +229,7 @@ function Typography() {
                 "https://demos.creative-tim.com/argon-design-system-angular/assets/img/theme/team-3-800x800.jpg"
               }
               imgClass={"img-fluid rounded shadow-lg"}
+              width={"150px"}
             />
           </div>
           <div className="col-sm-3 col-6">
@@ -237,6 +240,7 @@ function Typography() {
                 "https://demos.creative-tim.com/argon-design-system-angular/assets/img/theme/team-4-800x800.jpg"
               }
               imgClass={"img-fluid rounded-circle shadow-lg"}
+              width={"150px"}
             />
           </div>
         </div>

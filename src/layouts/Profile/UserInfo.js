@@ -28,8 +28,9 @@ function UserInfo() {
               <div className="col-lg-3 order-lg-2">
                 <Avatar
                   imgClass={"rounded-circle user-info__avatar"}
-                  src={"https://picsum.photos/150/150"}
+                  src={"https://picsum.photos/180/180"}
                   alt={"User Avatar"}
+                  width={"180px"}
                 />
               </div>
               <div className="col-lg-4 order-lg-3"></div>

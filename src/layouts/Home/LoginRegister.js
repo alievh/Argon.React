@@ -34,7 +34,7 @@ function LoginRegister() {
               />
             </div>
           </div>
-          <div className="col-lg-5">
+          <div className="col-lg-5 mt-5">
             <div className="authentication">
               <LoginCard buttonText={"SIGN IN"} />
             </div>

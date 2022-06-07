@@ -35,6 +35,10 @@ ul {
   margin-top: 96px;
 }
 
+.mb-96p {
+  margin-bottom: 96px;
+}
+
 .btn {
   font-size: 0.875rem;
   font-weight: 600;
@@ -300,6 +304,10 @@ ul {
   background-color: rgba(203, 210, 246, 0.5);
 }
 
+.spanbg-white {
+  background-color: #fff;
+}
+
 .spanbg-success {
   background-color: rgba(147, 231, 195, 0.5);
 }
@@ -334,6 +342,14 @@ ul {
 
 .textcolor-danger {
   color: #f5365c;
+}
+
+button {
+  transition: 0.15s all linear;
+}
+
+button:hover {
+  transform: translateY(-2px);
 }
 
 html,
@@ -1016,6 +1032,39 @@ body {
   margin: 8px 8px 8px 0;
 }
 
+.card-row .card-body {
+  background-color: #fff;
+  transition: 0.15s all linear;
+}
+
+.card-row .card-body:hover {
+  transform: translateY(-15px);
+}
+
+.card-row .card-body h6 {
+  text-transform: uppercase;
+}
+
+.card-row .card-body p {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.card-row .col-lg-4 {
+  z-index: 100;
+}
+
+.landing-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.landing-icon svg {
+  font-size: 22px;
+}
+
 .nav-bar {
   width: 100%;
   padding: 16px;
@@ -1306,8 +1355,10 @@ body {
   color: #fff;
 }
 
-.login-register .authentication {
-  transform: scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg);
+@media screen and (min-width: 990px) {
+  .login-register .authentication {
+    transform: scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg);
+  }
 }
 
 .download-angular {
@@ -1507,6 +1558,208 @@ body {
 
 .authentication .form .remember.privacy a span {
   color: #5e72e4;
+}
+
+.landing-intro {
+  width: 100%;
+  padding: 96px 0 250px 0;
+  background: linear-gradient(150deg, #7795f8 15%, #6772e5 70%, #555abf 94%);
+  position: relative;
+}
+
+.landing-intro h1 {
+  font-size: 2.1875rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.landing-intro h1 span {
+  font-weight: 300;
+}
+
+.landing-intro p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-top: 1.5rem;
+  color: #fff;
+}
+
+.awsome-features {
+  padding: 96px 0;
+}
+
+.awsome-features__left {
+  padding-right: 64px;
+}
+
+.awsome-features__left p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.awsome-features__left .shadow {
+  width: 60px;
+  height: 60px;
+}
+
+.awsome-features__left .shadow svg {
+  font-size: 28px;
+}
+
+.awsome-features__left ul li {
+  padding: 8px 0;
+  display: flex;
+}
+
+.awsome-features__left ul li .shadow {
+  width: 35px;
+  height: 35px;
+}
+
+.awsome-features__left ul li .shadow svg {
+  font-size: 16px;
+}
+
+.awsome-features__left ul li h6 {
+  display: inline-block;
+  padding-top: 8px;
+}
+
+.landing-costumer {
+  padding: 64px 0;
+  background-color: #f4f5f7;
+}
+
+.landing-costumer .landing-card {
+  background-color: #172b4d;
+  border-radius: 5px;
+}
+
+.landing-costumer .landing-card__img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.landing-costumer .card-content {
+  padding: 32px;
+}
+
+.landing-costumer .card-content h4 {
+  font-size: 2.1875rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.landing-costumer .card-content p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-top: 1.5rem;
+  color: #fff;
+}
+
+.landing-costumer__right .shadow {
+  width: 60px;
+  height: 60px;
+}
+
+.landing-costumer__right .shadow svg {
+  font-size: 26px;
+}
+
+.landing-costumer__right .first-paragraph {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-top: 1.5rem;
+}
+
+.landing-costumer__right p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.landing-costumer__right a {
+  font-size: 16px;
+}
+
+.modern-interface {
+  padding-top: 64px;
+  background: linear-gradient(87deg, #fb6340 0, #fbb140 100%);
+  position: relative;
+}
+
+.modern-interface__left .shadow {
+  width: 60px;
+  height: 60px;
+}
+
+.modern-interface__left .shadow svg {
+  font-size: 26px;
+}
+
+.modern-interface__left h4 {
+  font-size: 2.1875rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.modern-interface__left p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #fff;
+}
+
+.modern-interface .interface-card {
+  background-color: #fff;
+  padding: 24px;
+}
+
+.modern-interface .interface-card h5 {
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.modern-interface .interface-card p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.modern-interface .interface-card a {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.amazing-team {
+  padding: 96px 0;
+}
+
+.amazing-team__top {
+  text-align: center;
+}
+
+.amazing-team__top p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.7;
+  margin: 1.5rem 0 1rem 0;
+  color: #8898aa;
+}
+
+.landing-cards {
+  margin-top: -200px;
 }
 
 .authentication {
@@ -1775,5 +2028,9 @@ body {
 
 .user-info__information a {
   text-decoration: none;
+}
+
+.footer {
+  background-color: #f4f5f7;
 }
 /*# sourceMappingURL=main.css.map */

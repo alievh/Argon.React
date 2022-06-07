@@ -1,10 +1,10 @@
 import React from "react";
 
-function Avatar({src, title, alt, imgClass}) {
+function Avatar({src, title, alt, imgClass, width}) {
   return (
     <>
     {title}
-    <img className={imgClass} src={src} alt={alt} width="150px" />
+    <img className={imgClass} src={src} alt={alt} width={width} />
     </>
   );
 }
