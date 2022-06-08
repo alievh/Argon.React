@@ -55,14 +55,14 @@ function Navbar() {
               <div className="nav-bar__menu">
                 <ul className="menu-dropdown">
                   <li>
-                    <a href="/">
+                    <span href="/">
                       <span>Components</span>
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a className={"examples"} onMouseEnter={dropDown} onMouseLeave={dropUp} href="#">
+                    <span className={"examples"} onMouseEnter={dropDown} onMouseLeave={dropUp}>
                       <span>Examples</span>
-                    </a>
+                    </span>
                     <ul className="examples__drop disable">
                       <li><Link to="/landing">Landing</Link></li>
                       <li><Link to="/profile">Profile</Link></li>

@@ -1149,18 +1149,14 @@ body {
   list-style: none;
 }
 
-.nav-bar__menu .menu-dropdown li {
-  margin-right: 8px;
-}
-
-.nav-bar__menu .menu-dropdown li a {
+.nav-bar__menu .menu-dropdown li span {
   color: #fff;
   text-decoration: none;
   cursor: text;
-  padding: 16px;
+  padding: 16px 8px;
 }
 
-.nav-bar__menu .menu-dropdown li a span {
+.nav-bar__menu .menu-dropdown li span span {
   font-size: 0.9rem;
 }
 
