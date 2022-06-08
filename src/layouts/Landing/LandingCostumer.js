@@ -14,6 +14,7 @@ function LandingCostumer() {
               <img
                 className="landing-card__img"
                 src="https://demos.creative-tim.com/argon-design-system-angular/assets/img/theme/img-1-1200x1000.jpg"
+                alt="Card"
               />
               <div className="card-content">
                 <h4 className="mb-2">Design System</h4>

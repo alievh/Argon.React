@@ -21,6 +21,8 @@ function Navbar() {
     }
     setIsScrollUp(this.oldScroll > this.scrollY);
     this.oldScroll = this.scrollY;
+
+    
   };
 
   function dropDown() {
@@ -53,12 +55,12 @@ function Navbar() {
               <div className="nav-bar__menu">
                 <ul className="menu-dropdown">
                   <li>
-                    <a href="#">
+                    <a href="/">
                       <span>Components</span>
                     </a>
                   </li>
                   <li>
-                    <a className={"examples"} onMouseEnter={dropDown} onMouseLeave={dropUp} href="#">
+                    <a className={"examples"} onMouseEnter={dropDown} onMouseLeave={dropUp} href="/">
                       <span>Examples</span>
                     </a>
                     <ul className="examples__drop disable">

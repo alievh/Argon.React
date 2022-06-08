@@ -1,15 +1,62 @@
 .amazing-team {
-    padding: 96px 0;
-    
-    &__top {
-        text-align: center;
+  padding: 96px 0;
 
-        p {
-            font-size: 1.25rem;
-            font-weight: 300;
-            line-height: 1.7;
-            margin: 1.5rem 0 1rem 0;
-            color: $gray;
-        }
+  &__top {
+    text-align: center;
+
+    p {
+      font-size: 1.25rem;
+      font-weight: 300;
+      line-height: 1.7;
+      margin: 1.5rem 0 1rem 0;
+      color: $gray;
     }
+  }
+
+  &__bottom {
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      width: 38px;
+      height: 38px;
+      transition: 0.15s all linear;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+
+      svg {
+        font-size: 15px;
+      }
+    }
+
+    h5 {
+        display: flex;
+        flex-direction: column;
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      font-weight: 400;
+      line-height: 1.5;
+
+      small {
+        font-size: 1rem;
+        color: $gray;
+      }
+    }
+
+    .bgcolor-warning {
+      background-color: $warning;
+    }
+    .bgcolor-primary {
+      background-color: $primary;
+    }
+    .bgcolor-info {
+      background-color: $info;
+    }
+    .bgcolor-success {
+      background-color: $success;
+    }
+  }
 }

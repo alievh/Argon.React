@@ -91,7 +91,7 @@ function RegisterCard({ buttonText }) {
                 id="flexCheckDefault"
               />
               <label htmlFor="flexCheckDefault">
-                <a href="">
+                <a href="/">
                   I agree with the <span>Privacy Policy</span>
                 </a>
               </label>

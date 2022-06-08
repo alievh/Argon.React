@@ -14,7 +14,7 @@ function ModernInterface() {
         <div className="row align-items-center">
           <div className="col-md-6 order-lg-2 ms-lg-auto">
               <div className="ps-md-5">
-                  <img className="img-center img-fluid" src="https://demos.creative-tim.com/argon-design-system-angular/assets/img/ill/ill-2.svg" />
+                  <img className="img-center img-fluid" src="https://demos.creative-tim.com/argon-design-system-angular/assets/img/ill/ill-2.svg" alt="Angular" />
               </div>
           </div>
           <div className="col-lg-6 order-lg-1 mt-5">

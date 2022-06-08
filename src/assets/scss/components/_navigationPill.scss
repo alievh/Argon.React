@@ -1,34 +1,40 @@
 .navigation-pills {
+  display: flex;
+
+  &__list {
+    padding-right: 16px;
+  }
+
+  &__pill {
+    color: $primary;
+    cursor: pointer;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 
-    &__list {
-        padding-right: 16px;
+    &.small {
+      width: 35px;
+      height: 35px;
 
+      text-decoration: none;
     }
 
-    &__pill {
-        color: $primary;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        background-color: white;
-        box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-
-        svg {
-            font-size: 18px;
-        }
-
-        &:hover {
-            color: $primary;
-        }
-
-        &.active {
-            background-color: $primary;
-            color: $white;
-        }
+    svg {
+      font-size: 18px;
     }
+
+    &:hover {
+      color: $primary;
+    }
+
+    &.active {
+      background-color: $primary;
+      color: $white;
+    }
+  }
 }

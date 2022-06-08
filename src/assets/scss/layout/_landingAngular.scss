@@ -1,0 +1,25 @@
+.landing-angular {
+  padding-bottom: 96px;
+
+  .container {
+    background: linear-gradient(87deg, #fb6340 0, #fbb140 100%) !important;
+    border-radius: 5px;
+
+    h3 {
+      font-size: 1.75rem;
+      margin-bottom: 0.5rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: $white;
+    }
+
+    p {
+      font-size: 1.25rem;
+      font-weight: 300;
+      line-height: 1.7;
+      color: $white;
+      margin: 16px 0;
+    }
+
+  }
+}

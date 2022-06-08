@@ -1,0 +1,12 @@
+.date-input {
+    width: 100%;
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+
+    &::placeholder {
+        color: $gray;
+        display: none;
+    }
+}

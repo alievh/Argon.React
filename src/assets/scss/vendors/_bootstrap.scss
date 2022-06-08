@@ -246,6 +246,10 @@ ul {
 
 .bg-default {
   background-color: $default;
+  border-color: $default;
+  &:hover {
+    background-color: $default;
+  }
 }
 
 .bgcolor-secondary {
@@ -266,6 +270,10 @@ ul {
 
 .bgcolor-warning {
   background-color: $warning;
+  border-color: $warning;
+  &:hover {
+    background-color: $warning;
+  }
 }
 
 .spanbg-primary {

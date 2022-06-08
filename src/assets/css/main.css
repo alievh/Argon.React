@@ -278,6 +278,11 @@ ul {
 
 .bg-default {
   background-color: #172b4d;
+  border-color: #172b4d;
+}
+
+.bg-default:hover {
+  background-color: #172b4d;
 }
 
 .bgcolor-secondary {
@@ -297,6 +302,11 @@ ul {
 }
 
 .bgcolor-warning {
+  background-color: #fb6340;
+  border-color: #fb6340;
+}
+
+.bgcolor-warning:hover {
   background-color: #fb6340;
 }
 
@@ -1008,6 +1018,12 @@ body {
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
+.navigation-pills__pill.small {
+  width: 35px;
+  height: 35px;
+  text-decoration: none;
+}
+
 .navigation-pills__pill svg {
   font-size: 18px;
 }
@@ -1063,6 +1079,47 @@ body {
 
 .landing-icon svg {
   font-size: 22px;
+}
+
+.date-input {
+  width: 100%;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 10px;
+}
+
+.date-input::placeholder {
+  color: #8898aa;
+  display: none;
+}
+
+.tabs li {
+  display: flex;
+  justify-content: center;
+}
+
+.tabs li button {
+  padding: 15px 0;
+  width: 95%;
+  color: #5e72e4;
+}
+
+.tabs p {
+  font-weight: 300;
+  line-height: 1.7;
+  font-size: 0.875rem;
+}
+
+.modal-container .modal-head-button {
+  width: 100%;
+}
+
+.modal-container .modal-body p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-bottom: 16px;
 }
 
 .nav-bar {
@@ -1330,6 +1387,16 @@ body {
   color: #fff;
 }
 
+.bootstrap-carousel .carousel {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 960px) {
+  .bootstrap-carousel .carousel {
+    transform: scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg);
+  }
+}
+
 .login-register {
   position: relative;
   padding: 96px 0;
@@ -1408,11 +1475,223 @@ body {
 }
 
 .nucleo-icons .btn {
-  transition: .15s all linear;
+  transition: 0.15s all linear;
 }
 
 .nucleo-icons .btn:hover {
   transform: translateY(-2px);
+}
+
+.nucleo-icons .nucleo-animation {
+  position: relative;
+}
+
+.nucleo-icons .nucleo-animation__container {
+  width: 100%;
+  height: 360px;
+  position: relative;
+}
+
+.nucleo-icons .nucleo-animation__container .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.nucleo-icons .nucleo-animation__container .icons.center-icons {
+  top: calc(50% - 40px);
+  left: calc(50% - 25px);
+}
+
+.nucleo-icons .nucleo-animation__container.blur-container {
+  filter: blur(8px);
+}
+
+.nucleo-icons .nucleo-animation .span {
+  font-size: 1.25rem;
+  position: absolute;
+  top: calc(50% + 7px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.15s ease;
+  z-index: 100;
+  color: #2dce89;
+}
+
+.nucleo-icons .nucleo-animation .span.span-blur {
+  opacity: 1;
+  top: 50%;
+}
+
+.nucleo-icons .nucleo-animation .diamond-icon {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  top: calc(50% - 40px);
+  left: calc(50% - 25px);
+  z-index: 1000;
+}
+
+.nucleo-icons .nucleo-animation .diamond-icon svg {
+  font-size: 36px;
+  color: #fb6340;
+}
+
+.nucleo-icons .nucleo-animation .bag-icon {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  top: calc(50% - 30px);
+  left: 28%;
+}
+
+.nucleo-icons .nucleo-animation .bag-icon svg {
+  font-size: 24px;
+  color: #5e72e4;
+}
+
+.nucleo-icons .nucleo-animation .building-icon {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  top: 70%;
+  left: 36%;
+}
+
+.nucleo-icons .nucleo-animation .building-icon svg {
+  font-size: 24px;
+  color: #5e72e4;
+}
+
+.nucleo-icons .nucleo-animation .play-icon {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  top: 10%;
+  left: 36%;
+}
+
+.nucleo-icons .nucleo-animation .play-icon svg {
+  font-size: 24px;
+  color: #5e72e4;
+}
+
+.nucleo-icons .nucleo-animation .chart-icon {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  top: -10%;
+  left: 15%;
+}
+
+.nucleo-icons .nucleo-animation .chart-icon svg {
+  font-size: 24px;
+  color: #5e72e4;
+}
+
+.nucleo-icons .nucleo-animation .picture-icon {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  top: calc(50% - 30px);
+  left: 68%;
+}
+
+.nucleo-icons .nucleo-animation .picture-icon svg {
+  font-size: 24px;
+  color: #5e72e4;
+}
+
+.nucleo-icons .nucleo-animation .calendar-icon {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  top: calc(50% - 40px);
+  left: 3%;
+}
+
+.nucleo-icons .nucleo-animation .calendar-icon svg {
+  font-size: 24px;
+  color: #5e72e4;
+}
+
+.nucleo-icons .nucleo-animation .camera-icon {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  top: 90%;
+  left: 15%;
+}
+
+.nucleo-icons .nucleo-animation .camera-icon svg {
+  font-size: 24px;
+  color: #5e72e4;
+}
+
+.nucleo-icons .nucleo-animation .card-icon {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  top: -10%;
+  left: 80%;
+}
+
+.nucleo-icons .nucleo-animation .card-icon svg {
+  font-size: 24px;
+  color: #5e72e4;
+}
+
+.nucleo-icons .nucleo-animation .shopping-icon {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  top: calc(50% - 40px);
+  left: 92%;
+}
+
+.nucleo-icons .nucleo-animation .shopping-icon svg {
+  font-size: 24px;
+  color: #5e72e4;
+}
+
+.nucleo-icons .nucleo-animation .bell-icon {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  top: 90%;
+  left: 80%;
+}
+
+.nucleo-icons .nucleo-animation .bell-icon svg {
+  font-size: 24px;
+  color: #5e72e4;
+}
+
+.nucleo-icons .nucleo-animation .cube-icon {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  top: 70%;
+  left: 60%;
+}
+
+.nucleo-icons .nucleo-animation .cube-icon svg {
+  font-size: 24px;
+  color: #5e72e4;
+}
+
+.nucleo-icons .nucleo-animation .react-icon {
+  width: 60px;
+  height: 60px;
+  top: 10%;
+  left: 60%;
+}
+
+.nucleo-icons .nucleo-animation .react-icon svg {
+  font-size: 24px;
+  color: #5e72e4;
 }
 
 .support h3 {
@@ -1758,6 +2037,79 @@ body {
   color: #8898aa;
 }
 
+.amazing-team__bottom a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  transition: 0.15s all linear;
+}
+
+.amazing-team__bottom a:hover {
+  transform: translateY(-2px);
+}
+
+.amazing-team__bottom a svg {
+  font-size: 15px;
+}
+
+.amazing-team__bottom h5 {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.amazing-team__bottom h5 small {
+  font-size: 1rem;
+  color: #8898aa;
+}
+
+.amazing-team__bottom .bgcolor-warning {
+  background-color: #fb6340;
+}
+
+.amazing-team__bottom .bgcolor-primary {
+  background-color: #5e72e4;
+}
+
+.amazing-team__bottom .bgcolor-info {
+  background-color: #11cdef;
+}
+
+.amazing-team__bottom .bgcolor-success {
+  background-color: #2dce89;
+}
+
+.landing-angular {
+  padding-bottom: 96px;
+}
+
+.landing-angular .container {
+  background: linear-gradient(87deg, #fb6340 0, #fbb140 100%) !important;
+  border-radius: 5px;
+}
+
+.landing-angular .container h3 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.landing-angular .container p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #fff;
+  margin: 16px 0;
+}
+
 .landing-cards {
   margin-top: -200px;
 }
@@ -2028,9 +2380,5 @@ body {
 
 .user-info__information a {
   text-decoration: none;
-}
-
-.footer {
-  background-color: #f4f5f7;
 }
 /*# sourceMappingURL=main.css.map */
