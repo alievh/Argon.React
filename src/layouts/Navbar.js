@@ -60,7 +60,7 @@ function Navbar() {
                     </a>
                   </li>
                   <li>
-                    <a className={"examples"} onMouseEnter={dropDown} onMouseLeave={dropUp} href="/">
+                    <a className={"examples"} onMouseEnter={dropDown} onMouseLeave={dropUp} href="#">
                       <span>Examples</span>
                     </a>
                     <ul className="examples__drop disable">
